@@ -11,14 +11,14 @@
 
 - Brand new data fetcher which supports HTTPS protocol
 - Add new Equipment icon
-- Update game data to match latest game version, including AACI / OASW / Special Attack / Fighter Power Formula / Task type
+- Update game data to match latest game version, including AACI / OASW / Special Attack / Fighter Power Formula / Task type / Task Tracking data
 - Add support of showing detailed fleet info tile on main panel (Thanks to [liu-ziyang](https://github.com/liu-ziyang))
 - Add support of new special attack
 - [Windows] Supports Windows 11 Arcylic style window (Experimental)
 
 ### Changes
 
-- Update to Electron@27(Chromium@118)
+- Update to Electron@36(Chromium@136)
 
 ### Fixes
 
