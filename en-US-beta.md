@@ -15,6 +15,7 @@
 - Add support of showing detailed fleet info tile on main panel (Thanks to [liu-ziyang](https://github.com/liu-ziyang))
 - Add support of new special attack
 - [Windows] Supports Windows 11 Arcylic style window (Experimental)
+- [Windows] [Linux] Enable DNS over HTTPS by default
 
 ### Changes
 

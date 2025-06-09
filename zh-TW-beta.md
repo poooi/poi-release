@@ -15,6 +15,7 @@
 - 支援在主面板使用完整艦隊資訊模組 (感謝 [liu-ziyang](https://github.com/liu-ziyang) 的貢獻)
 - 增加新戰鬥類型支援
 - [Windows] 支援 Windows 11 磨砂外觀 (試驗性)
+- [Windows] [Linux] 預設啓用 DNS over HTTPS
 
 ### 變更
 

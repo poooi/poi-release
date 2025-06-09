@@ -15,6 +15,7 @@
 - 支持在主面板使用完整舰队信息模块 (感谢 [liu-ziyang](https://github.com/liu-ziyang) 的贡献)
 - 增加新战斗类型支持
 - [Windows] 支持 Windows 11 磨砂外观 (试验性)
+- [Windows] [Linux] 默认启用 DNS over HTTPS
 
 ### 变更
 
