@@ -1,46 +1,27 @@
-## POI v10.9.2 changelog
+## POI v11.0.0 changelog
 
-### Fixes
+### Breaking
 
-- Fixed rule of Yamato special attack indicator
-
-## POI v10.9.1 changelog
-
-### Fixes
-
-- Fixed possible failure when loading plugins
-
-## POI v10.9.0 changelog
+- Windows 7 is no longer supported due to Electron updates
+- Resource Hacking now supports limited resource types, including image and javascript files that related to KanColle login
+- Proxy relay mode is removed
+- Network retry feature is removed
 
 ### Features
 
-- Added new special attack type: `Yamato Kai Ni / Kai Ni Heavy` `Musashi Kai Ni` `Maryland`
-- Added new OASW type: `Samuel B Roberts Mk.II`
-- Added new equipment icon
+- Brand new data fetcher which supports HTTPS protocol
+- Add new Equipment icon
+- Update game data to match latest game version, including AACI / OASW / Special Attack / Fighter Power Formula / Task type / Task Tracking data
+- Add support of showing detailed fleet info tile on main panel (Thanks to [liu-ziyang](https://github.com/liu-ziyang))
+- Add support of new special attack
+- [Windows] Supports Windows 11 Arcylic style window (Experimental)
+- [Windows] [Linux] Enable DNS over HTTPS by default
 
 ### Changes
 
-- Changed UI color scheme
+- Update to Electron@36(Chromium@136)
 
 ### Fixes
 
-- Fixed screenshot failure in isolate mode
-- Fixed capture by canvas not working
-- Fixed GPU info page cannot be loaded correctly
-- Fixed socks5 proxy could not work correctly in certain cases
-
-## POI v10.8.0 changelog
-
-### Features
-
-- Added support for the new equipment count rule
-
-### Changes
-
-- Update to Electron@16 (Chromium 96)
-- Add code signing for macOS version
-
-### Fixes
-
-- Fixed crash on Windows 7/8 and macOS 10.x
-- Miscellaneous UI fix
+- Fix network error page is rendered unexpectly when sub iframe fail to load
+- Fix LBAC aircraft banner not displaying correctly
