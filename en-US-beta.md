@@ -1,3 +1,13 @@
+## POI v11.1.0 changelog
+
+### Features
+
+- Add support of adding custom certificate
+
+### Fixes
+
+- Fix DMM hacks (cookies, alerts, etc) not working since HTTPS update
+
 ## POI v11.0.0 changelog
 
 ### Breaking
