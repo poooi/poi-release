@@ -1,37 +1,36 @@
-## POI v11.1.0 changelog
-
-### Features
-
-- Add support of adding custom certificate
-
-### Fixes
-
-- Fix DMM hacks (cookies, alerts, etc) not working since HTTPS update
-
-## POI v11.0.0 changelog
+## POI v12.0.0 changelog
 
 ### Breaking
 
-- Windows 7 is no longer supported due to Electron updates
-- Resource Hacking now supports limited resource types, including image and javascript files that related to KanColle login
-- Proxy relay mode is removed
-- Network retry feature is removed
+- Plugins relying on deprecated global variables and global IPC will no longer work and need to be updated
+- The non-grid plugin layout option is removed
 
 ### Features
 
-- Brand new data fetcher which supports HTTPS protocol
-- Add new Equipment icon
-- Update game data to match latest game version, including AACI / OASW / Special Attack / Fighter Power Formula / Task type / Task Tracking data
-- Add support of showing detailed fleet info tile on main panel (Thanks to [liu-ziyang](https://github.com/liu-ziyang))
-- Add support of new special attack
-- [Windows] Supports Windows 11 Arcylic style window (Experimental)
-- [Windows] [Linux] Enable DNS over HTTPS by default
+- Refreshed plugin drawer, with support of pinning plugin windows. A pinned window keeps its position and size relative to the main window and follows it when the main window is moved. The isolated game window can be pinned in the same way
+- Ship and equipment rarity backgrounds are now drawn by poi itself and look sharp at any size
+- Add scroll shadow to task panel and plugin list
+- Support fighter power calculation of jet fighters
+- Support latest game API changes, including fleet preset reordering, equipment recovery on remodel and land base air corps condition recovery
+- Show which fleets meet the requirement for quests that require certain ships
+- Add new equipment icons
+- Update game data to match latest game version, including AACI / OASW / Special Attack / quest and quest tracking / map / ship tag data
+- [macOS] Tray icon now follows system appearance
 
 ### Changes
 
-- Update to Electron@36(Chromium@136)
+- Update to Electron@43 (Chromium@150)
+- Add optional anonymous usage statistics, which can be turned off in Settings - Advanced
+- Window now shows up only when it is ready, with smoother animations and refreshed colors
+- Misc performance improvements
 
 ### Fixes
 
-- Fix network error page is rendered unexpectly when sub iframe fail to load
-- Fix LBAC aircraft banner not displaying correctly
+- Fix crash when opening, closing or reloading plugins
+- Fix crash caused by game popup windows
+- Fix ship name not showing in certain cases
+- Fix custom background not working
+- Fix LBAC tooltip showing incorrect status of each squadron
+- Fix Fw5 quest not resetting daily
+- Fix incorrect condition timer and notification messages
+- Misc UI fixes

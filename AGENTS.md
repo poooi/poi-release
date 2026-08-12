@@ -42,14 +42,42 @@ When updating the changelog, follow these rules:
 3. The changelog should cover changes between the tag being released and the previous
    stable tag. The raw list may be very long, so focus on major changes only; fold small
    ones into a single misc entry (e.g. "misc UI tweak").
-4. A stable release consolidates the beta entries of that version into a single
-   `## POI vX.Y.Z changelog` section — beta pre-release headings never appear in the
-   stable files.
+4. Both channels use the target stable version as the heading. A beta release writes
+   under `## POI vX.Y.Z changelog` (the version the beta leads to, without the
+   `-beta.N` suffix) and later betas of the same version add entries to that same
+   section — beta pre-release headings never appear in any file.
 5. Keep the changelog consistent between the beta and stable channels.
 6. The changelog should be user-oriented and avoid technical expressions. Include
    technical changes only when they affect the user experience.
 7. Always bump `latest.json` in the same commit as the changelog entry; the version
    pointer and the changelog must never disagree.
+
+## Drafting a Changelog
+
+The changes themselves live in the [poi](https://github.com/poooi/poi) repository, not
+here. A local checkout is usually at `../poi`.
+
+- Determine the tag to release with `git tag --sort=-creatordate` in the poi repo, and
+  collect the raw list with `git log --no-merges --pretty=%s <prev stable tag>..<tag>`.
+  Note that special tags exist and must be skipped (e.g. `v11.1.0-win7`).
+- Commit subjects are a starting point, not the truth. Before describing a feature,
+  read the commit or the code it touches — subjects are often written from the
+  implementation's point of view and describe the change incorrectly or too narrowly
+  for a user-facing entry.
+- Give an entry enough detail that a user understands what the feature does for them,
+  rather than only naming it. If behaviour is non-obvious, describe it in a sentence.
+- One bullet per user-visible change. Group related commits into a single entry rather
+  than mirroring the commit history — especially game API support, game data updates,
+  and refactor/performance work.
+- Do not list a change that another entry already implies (e.g. a visual detail that is
+  part of a larger redesign). Prefer the entry the user would recognise.
+- Check that entries do not overlap across sections or repeat each other in different
+  words.
+- Do report user-visible privacy and telemetry changes, and mention the setting that
+  controls them.
+- For engine upgrades, read the real Chromium version out of the bundled binary
+  (`grep -a -o -m1 "Chrome/[0-9.]*" node_modules/electron/dist/electron.exe`) instead
+  of guessing it from the Electron major version.
 
 ## Changelog Format
 
