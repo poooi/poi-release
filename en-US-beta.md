@@ -11,7 +11,8 @@
 - Ship and equipment rarity backgrounds are now drawn by poi itself and look sharp at any size
 - Add scroll shadow to task panel and plugin list
 - Support fighter power calculation of jet fighters
-- Support latest game API changes, including fleet preset reordering, equipment recovery on remodel and land base air corps condition recovery
+- Support latest game API changes, including fleet preset reordering, equipment recovery on remodel, aircraft slot expansion and land base air corps condition recovery
+- Fleet stats of a combined fleet now show the total of both fleets, with the values of the fleet itself available in the tooltip
 - Show which fleets meet the requirement for quests that require certain ships
 - Add new equipment icons
 - Update game data to match latest game version, including AACI / OASW / Special Attack / quest and quest tracking / map / ship tag data
