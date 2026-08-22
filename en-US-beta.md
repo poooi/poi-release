@@ -8,6 +8,8 @@
 ### Features
 
 - Refreshed plugin drawer, with support of pinning plugin windows. A pinned window keeps its position and size relative to the main window and follows it when the main window is moved. The isolated game window can be pinned in the same way
+- Add ship and equipment search: press Ctrl/Cmd+F or use the button in the admiral panel to look up a ship, a piece of equipment or a land base squadron, and poi tells where it sits in the game's own list - filter tab, page and row. Names can be searched in Japanese, in the translated name, in English or in romaji
+- Right-click a ship tile to search the equipment she can carry
 - Ship and equipment rarity backgrounds are now drawn by poi itself and look sharp at any size
 - Add scroll shadow to task panel and plugin list
 - Support fighter power calculation of jet fighters
@@ -33,5 +35,6 @@
 - Fix custom background not working
 - Fix LBAC tooltip showing incorrect status of each squadron
 - Fix Fw5 quest not resetting daily
+- Fix window position and size being lost when poi does not exit normally
 - Fix incorrect condition timer and notification messages
 - Misc UI fixes
