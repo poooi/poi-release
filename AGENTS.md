@@ -71,6 +71,21 @@ here. A local checkout is usually at `../poi`.
   and refactor/performance work.
 - Do not list a change that another entry already implies (e.g. a visual detail that is
   part of a larger redesign). Prefer the entry the user would recognise.
+- A `Fixes` entry is only for a bug users could actually hit, i.e. one that was already
+  present in the previous stable version. A bug introduced and fixed within the same
+  development cycle never reached them, so it is not a fix — leave it out. Refactors and
+  redesigns produce many such commits; check where the broken code came from before
+  listing its fix:
+
+  ```sh
+  # in the poi repo: when was the line the fix removes introduced?
+  git log --format="%h %ad %s" --date=short -S'<removed code>' -- <file>
+  # and what else touched that file since the last stable tag?
+  git log --format="%h %ad %s" --date=short <prev stable tag>..<fix commit> -- <file>
+  ```
+
+  If the cause lands after the previous stable tag, drop the entry. The same applies to
+  a `Breaking` or `Changes` entry describing something that only ever existed in betas.
 - Check that entries do not overlap across sections or repeat each other in different
   words.
 - Do report user-visible privacy and telemetry changes, and mention the setting that
