@@ -1,3 +1,10 @@
+## POI v12.0.1 changelog
+
+### Fixes
+
+- Fix copying to clipboard not working, including screenshots
+- Fix LoS (Formula 33) calculation, both for combined fleets and for the improvement bonus of some equipment (Thanks to [HetmesAskalana](https://github.com/HetmesAskalana))
+
 ## POI v12.0.0 changelog
 
 ### Breaking
