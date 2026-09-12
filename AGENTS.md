@@ -125,3 +125,12 @@ here. A local checkout is usually at `../poi`.
 
 - Release commits use the message `release: vX.Y.Z` (exactly the tag being released).
 - Do not commit or push unless asked.
+
+## Historical archive
+
+- The major-version reset rule applies only to the root channel Markdown files. Never reset history/stable.json.
+- Archive only normal stable tags; exclude beta, alpha and special compatibility builds.
+- Rebuild the archive with node scripts/rebuild-history.mjs ../poi after committing stable notes. See history/README.md for sources and missing-note reconstruction rules.
+- Preserve available original translations. For older releases with no translation, leave that language absent so the website can show the English original; do not label English text as translated.
+- Explicitly reconstructed entries belong in history/reconstructed.json, with reviewed code evidence and all four language summaries. Keep their reconstructed flag when generating the archive.
+- Archive-only restoration does not represent a new release and must not change latest.json or the root channel files.
