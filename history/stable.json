@@ -1022,6 +1022,11 @@
     "version": "v6.1.3",
     "publishedAt": "2016-04-02T05:11:53Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 修复\n- 修复调整窗口大小时反复触发布局调整、陷入死循环的问题",
+        "source": "https://m.weibo.cn/detail/3959809202236314",
+        "reconstructed": false
+      },
       "en-US": {
         "markdown": "## Fixes\n- Fix infinite-loop bug while resizing",
         "source": "https://github.com/poooi/poi/releases/tag/v6.1.3",
@@ -1033,6 +1038,11 @@
     "version": "v6.1.2",
     "publishedAt": "2016-04-01T20:28:30Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 修复\n- 修复游戏更新后任务追踪记录无法正常读取、任务进度无法正常更新的问题",
+        "source": "https://m.weibo.cn/detail/3959809202236314",
+        "reconstructed": false
+      },
       "en-US": {
         "markdown": "## Fixes\n- Fix quest tracking",
         "source": "https://github.com/poooi/poi/releases/tag/v6.1.2",
@@ -1044,6 +1054,11 @@
     "version": "v6.1.1",
     "publishedAt": "2016-04-01T17:15:57Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 增加禁用面板切换动画的选项\n\n### 修复\n- 修复安装、卸载插件时可能无限转圈的问题\n- 适配 2016 年 4 月 1 日游戏更新，修复面板数据无法正常更新的问题\n- 修复部分界面布局和提示样式问题",
+        "source": "https://m.weibo.cn/detail/3959809202236314",
+        "reconstructed": false
+      },
       "en-US": {
         "markdown": "## Features\n- Add a option to disable animation\n\n## Fixes\n- Fix crash caused by new API of kancolle Apr.1st update\n- Fix crash when install or uninstall plugins",
         "source": "https://github.com/poooi/poi/releases/tag/v6.1.1",

@@ -219,5 +219,59 @@
       "weibo/images/006fy9Ztgw1f881vdqdphj312s1fxgum.jpg",
       "weibo/images/006fy9Ztgw1f881vkxlvej312s0fkgno.jpg"
     ]
+  },
+  "v6.1.1": {
+    "source": "https://m.weibo.cn/detail/3959809202236314",
+    "images": [
+      "https://ww2.sinaimg.cn/large/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "transcription": "weibo/announcements/3959809202236314.md",
+    "additionalSources": [
+      "https://github.com/poooi/poi/releases/tag/v6.1.1",
+      "https://github.com/poooi/poi/compare/v6.0.1...v6.1.1",
+      "https://github.com/poooi/poi/commit/ed644cebd7f06b7f279014258448cfda20bfb1c8",
+      "https://github.com/poooi/poi/commit/96914ef135737c3f588485f8ffa5e7ab74cf6e38",
+      "https://github.com/poooi/poi/commit/a4953ec049fe8f5e37220005628888c22d79126d",
+      "https://github.com/poooi/poi/commit/07213f7832e8dc829d1385ae9270a90eef462901",
+      "https://github.com/poooi/poi/commit/4734a7555b487459a95634295810b8a0c2da8705",
+      "https://github.com/poooi/poi/commit/c03d0b35e1eda41a18ed38b501d0234bb30d71c5",
+      "https://github.com/poooi/poi/commit/1bf101f6d16c638ce7940ddb2a1f3e61e49d9245"
+    ],
+    "editorial": "6.1.3 配图是累积公告。禁用动画、安装卸载插件、新游戏接口适配和 UI 修复均已在 v6.1.1 落地，不归入 v6.1.3。插件安装卸载属于本体插件管理功能，保留在本体日志。未创建不存在的 v6.1.0 稳定标签条目。"
+  },
+  "v6.1.2": {
+    "source": "https://m.weibo.cn/detail/3959809202236314",
+    "images": [
+      "https://ww2.sinaimg.cn/large/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "transcription": "weibo/announcements/3959809202236314.md",
+    "additionalSources": [
+      "https://github.com/poooi/poi/releases/tag/v6.1.2",
+      "https://github.com/poooi/poi/compare/v6.1.1...v6.1.2",
+      "https://github.com/poooi/poi/commit/5df8b210c375d3d14356a1dd97aa5697b069fa9d"
+    ],
+    "editorial": "将累积公告中笼统的面板数据修复按正式版边界细分。v6.1.1...v6.1.2 唯一功能提交 5df8b210 调整任务追踪记录读取使用的接口及账号标识，并处理缺失的任务记录；GitHub 正式版原文同样写明 Fix quest tracking。未重复列出上一版本已完成的其他面板适配。"
+  },
+  "v6.1.3": {
+    "source": "https://m.weibo.cn/detail/3959809202236314",
+    "images": [
+      "https://ww2.sinaimg.cn/large/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1f2iawqw6xej312i0mkn00.jpg"
+    ],
+    "transcription": "weibo/announcements/3959809202236314.md",
+    "additionalSources": [
+      "https://github.com/poooi/poi/releases/tag/v6.1.3",
+      "https://github.com/poooi/poi/compare/v6.1.2...v6.1.3",
+      "https://github.com/poooi/poi/commit/9dd97be8c578ddd531c1ab3f18d856b830608830"
+    ],
+    "editorial": "累积公告将本轮问题概括为面板造成的内存爆炸；版本条目只采用代码和 GitHub 正式版原文均能确认的窗口缩放死循环修复。9dd97be8 避免重复写入相同高度，并限制游戏页面尺寸调整。保留原图和完整转录，不将公告的笼统内存描述扩展成全部内存问题均已修复的结论。"
   }
 }

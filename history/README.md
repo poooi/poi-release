@@ -19,6 +19,8 @@ Each entry has a version, the original GitHub publication timestamp when one exi
 
 The original Simplified Chinese announcements by 今天poi出新版本了吗 (UID 5726583591) are transcribed in `weibo/vX.Y.Z.md`. `weibo.json` records canonical mobile post links, original image URLs, additional evidence and editorial decisions. Image originals are kept in `weibo/images/`; `weibo/image-sources.json` maps local files to their public sources.
 
+The v6.1.3 cumulative announcement is also transcribed verbatim in `weibo/announcements/3959809202236314.md`. Its changes are assigned to v6.1.1, v6.1.2 and v6.1.3 using the tagged code and original GitHub notes; the broad memory claim is preserved as source text without attributing every memory issue to the resize loop.
+
 Stable notes cover the development cycle since the previous stable version. Beta announcements are source material when a final announcement only lists the final delta; a cumulative final image supersedes repeated beta text. Corrections and removals take precedence. A beta-only regression is not presented as a fix affecting the previous stable. A later patch's changes are not moved into an earlier stable entry. No beta entries are added to `stable.json`.
 
 Original repository translations still take precedence. Weibo supplies missing Simplified Chinese; other languages retain their original notes or English fallback. The recovered v6.0.0 Chinese replaces its reconstructed summary, while unavailable translations remain explicitly reconstructed. v7.5.0 combines its beta announcement with a code-verified final resource-display addition and is explicitly marked reconstructed. Transcriptions normalize formatting and remove repeated delta sections; they are not newly invented release notes.
