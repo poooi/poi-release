@@ -41,6 +41,9 @@ const reconstructed = JSON.parse(
     'utf8',
   ),
 )
+const weibo = JSON.parse(
+  await readFile(new URL('../history/weibo.json', import.meta.url), 'utf8'),
+)
 const notesByVersion = new Map()
 
 // Newest snapshot wins: later corrections and translations supersede old text.
@@ -114,6 +117,20 @@ collectNotes(website, 'website', 'origin/master', [
   'public/update',
 ])
 collectNotes(poiServer, 'poi-server', 'origin/master', ['public/update'])
+for (const [version, entry] of Object.entries(weibo)) {
+  const notes = notesByVersion.get(version) ?? {}
+  notes['zh-CN'] ??= {
+    markdown: (
+      await readFile(
+        new URL('../history/weibo/' + version + '.md', import.meta.url),
+        'utf8',
+      )
+    ).trim(),
+    source: entry.source,
+    reconstructed: entry.reconstructed ?? false,
+  }
+  notesByVersion.set(version, notes)
+}
 
 const versions = [
   ...new Set([
@@ -128,6 +145,42 @@ versions.sort((a, b) => {
   const right = b.slice(1).split('.').map(Number)
   return right[0] - left[0] || right[1] - left[1] || right[2] - left[2]
 })
+// Keep recovered plugin history in the archive, outside the website's main notes.
+function splitPluginNotes(markdown) {
+  const main = []
+  const plugins = []
+  let pluginDepth = 0
+  let pluginBullet = false
+  for (const line of markdown.split('\n')) {
+    const boldHeading = /^\*\*(.+)\*\*$/.exec(line)
+    const heading =
+      /^(#{1,6})\s+(.+)$/.exec(line) ??
+      (boldHeading ? [line, '##', boldHeading[1]] : null)
+    if (heading) {
+      if (pluginDepth && heading[1].length <= pluginDepth) pluginDepth = 0
+      if (
+        /^(插件更新|Plugins|Plugin updates(?:.*)?|New plugin:.*)$/i.test(
+          heading[2],
+        )
+      )
+        pluginDepth = heading[1].length
+      pluginBullet = false
+    }
+    if (/^- /.test(line))
+      pluginBullet =
+        /^- (?:Add new plugin[(:]|New plugin:|.*KCwiki Quotes Translator|.*kcwiki 語音字幕)/i.test(
+          line,
+        ) ||
+        /^- \[(?:Prophet|Battle detail|Expedition|Quests?|Hensei Nikki|Report|Ship info|Fleet info|Akashic records)\]/i.test(
+          line,
+        )
+    ;(pluginDepth || pluginBullet ? plugins : main).push(line)
+  }
+  const result = { markdown: main.join('\n').trim() }
+  if (plugins.some((line) => line.trim()))
+    result.pluginMarkdown = plugins.join('\n').trim()
+  return result
+}
 const history = versions.map((version) => {
   const release = releases.get(version)
   const notes = notesByVersion.get(version) ?? {}
@@ -152,7 +205,7 @@ const history = versions.map((version) => {
       const entry = reconstructed[version]
       if (!entry.notes[language])
         throw new Error(`Missing reconstructed ${language} for ${version}`)
-      notes[language] = {
+      notes[language] ??= {
         markdown: entry.notes[language],
         source: entry.source,
         reconstructed: true,
@@ -163,6 +216,9 @@ const history = versions.map((version) => {
     throw new Error(
       `No release notes for ${version}; inspect the tagged code and add an explicitly reconstructed entry`,
     )
+  for (const note of Object.values(notes)) {
+    Object.assign(note, splitPluginNotes(note.markdown))
+  }
   return { version, publishedAt: release?.publishedAt ?? null, notes }
 })
 await writeFile(

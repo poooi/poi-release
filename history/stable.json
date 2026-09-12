@@ -192,9 +192,10 @@
     "publishedAt": "2021-11-22T14:30:48Z",
     "notes": {
       "en-US": {
-        "markdown": "Note: It's recommended to upgrade to v10.7.0 because some network-related functionality of former version is not working\n\n### Features\n\n- Added new equip icon\n- Added new OASW type: `Shinshu Maru` `Kaga Kai Ni Go` `Yuubari Kai Ni Tei`\n- Added new AACI type: `Altanta (38)`\n- Added support of Submarine Special Attack\n- Added new countdown for quarterly quest update\n- New plugin: `poi-plugin-quest-info-2` (The original quest plugin is deprecated)\n- Update to Electron@15 (Chromium@94)\n- Add support of arm build (Experimental)\n\n### Changes\n\n- Flash support is now fully removed\n\n### Fixes\n\n- Miscellaneous UI fix",
+        "markdown": "Note: It's recommended to upgrade to v10.7.0 because some network-related functionality of former version is not working\n\n### Features\n\n- Added new equip icon\n- Added new OASW type: `Shinshu Maru` `Kaga Kai Ni Go` `Yuubari Kai Ni Tei`\n- Added new AACI type: `Altanta (38)`\n- Added support of Submarine Special Attack\n- Added new countdown for quarterly quest update\n- Update to Electron@15 (Chromium@94)\n- Add support of arm build (Experimental)\n\n### Changes\n\n- Flash support is now fully removed\n\n### Fixes\n\n- Miscellaneous UI fix",
         "source": "https://github.com/poooi/website/blob/18465da1d5e9367c49a4c58d7bf6ca2e75f9a397/packages/data/update/en-US.md",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- New plugin: `poi-plugin-quest-info-2` (The original quest plugin is deprecated)"
       },
       "zh-CN": {
         "markdown": "### 功能\n\n- 增加新的装备图标\n- 增加开幕对潜支持: `神州丸` `加贺改二护` `夕张改二丁`\n- 增加对空 CI 支持: `亚特兰大 (38)`\n- 增加对潜水舰队攻击的支持\n- 增加月常任务倒计时\n- 新插件: `任务信息2` (原任务信息插件已停止支持，请移除)\n- 更新至 Electron@15 (Chromium@94)\n- 增加 ARM 支持（实验性）\n\n### 变更\n\n- Flash 支持已经被完全移除\n\n### 修复\n\n- 一些 UI 修复",
@@ -763,6 +764,12 @@
     "version": "v7.6.0",
     "publishedAt": "2017-04-30T05:36:41Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- [Windows] 更新高分辨率屏幕适配方式，信息栏跟随缩放比率缩放，并提高缩放上限\n- 细化自动切换面板设置：可分别开启本体和插件的自动切换，每个支持此功能的插件也有独立设置\n- 增加主面板在左侧的横向布局\n- 提督信息区域增加刷新倒计时，以及船位、装备位不足的警告\n- 支持新的陆航战斗机类型",
+        "source": "https://m.weibo.cn/detail/4102569666369871",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 显示下一点的资源掉落\n- [装备改修] 增加用于规划改修的星级争霸模块，重构界面并优化响应速度"
+      },
       "en-US": {
         "markdown": "- improved adaptation for high definition screens on Windows 10\n- detailed setting for auto switch functionality\n- new left-panel layout\n- countdown timer on admiral information bar\n- warning for no enough ship and item slots on admiral information bar\n- support for new plane type",
         "source": "https://github.com/poooi/poi/releases/tag/v7.6.0",
@@ -796,6 +803,12 @@
     "version": "v7.5.0",
     "publishedAt": "2017-04-03T04:38:24Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 支持提取 token 进行游戏屏幕分辨率适配\n- 欢迎窗口支持本地化\n- 支持新的水战分类图标和制空值计算\n- 信息栏增加刷新按钮，左键单击可了解具体使用方法\n- 支持自动切换插件面板\n\n- 地图提示中增加本次出击所获得或失去的资源、道具合计显示（依据正式版提交补充）\n\n### 修复\n- 修正同时领取“資源の再利用”和“対空機銃量産”时的计数错误\n- [Windows] 修复开始菜单未显示 poi (safe mode) 快捷方式的问题",
+        "source": "https://m.weibo.cn/detail/4091988116273348",
+        "reconstructed": true,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 更醒目地显示下一点情报和战斗结果，修正喷气式飞机参与时的我方舰载机总数计算\n- [一心二用] 使用 Chrome 的 User-Agent，通过部分 DMM 游戏（文豪とアルケミスト、社にほへと等）的 UA 检测"
+      },
       "en-US": {
         "markdown": "# Feature\n- Add new seaplane fighter icon and fighter power calculate.\n- Add refresh button on bottom bar.\n- Add support of auto-switch to plugin\n# Fixes\n- Fix quest count of `資源の再利用` and `対空機銃量産` 3514aae1f12d35e103a3e132388f756ce33b2d82\n- [Windows] Fix missing `poi (safe mode)` shortcut on startup menu 01c2a5e6cd40b85e0e6925690d931ec5274b2ba0",
         "source": "https://github.com/poooi/poi/releases/tag/v7.5.0",
@@ -818,6 +831,12 @@
     "version": "v7.4.0",
     "publishedAt": "2017-03-03T03:26:01Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 支持不同装备加成系数的 33 式索敌公式，可在舰队面板查看\n- 增加舰娘和舰队速度显示\n- 可在设置中关闭最终战提示\n- 更新部分装备图标，支持 2017 冬活新装备\n- 优化游戏区域缩放机制\n- 增加插件自动更新，可在插件设置面板开启\n- 优化 FCD 数据更新机制\n- 增加安全模式，插件不会自动启用；可使用命令行 --safe 或 -S，或设置中的“下次启动进入安全模式”\n- 支持调节面板区域最小宽度或高度，以获得更大的面板区域\n- [Linux] 增加托盘图标支持，可在设置中关闭\n- [Windows] 勾选启动时建立快捷方式后，也会创建 poi (safe mode) 快捷方式\n\n### 修复\n- 修正网络重试次数为负数时的网络错误，以及为 0 时仍显示重试信息的问题\n- 清华插件源关闭，自动把原使用清华源的用户迁移至其他源",
+        "source": "https://m.weibo.cn/detail/4081524570241818",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- 修正非第一舰队参加演习时，未卜先知无法正确判断参演舰队的问题\n- [舰娘信息] 移除排序设置区域，将当前排序信息显示在列表表头；修正排序使其与游戏内一致\n- [舰娘信息] 类型大类支持复选，增加“别的舰娘”分类，便于寻找水母、潜母、补给舰、扬陆舰和工作舰\n- [舰娘信息] 增设补强装备使用与本体一致的提示，支持显示舰娘所在舰队\n- [舰娘信息] 可切换裸装数值／含装备加成数值，以及单页／分页显示\n- [舰娘信息] 增加“在舰队中”“战意高昂”“增设补强”筛选，使用本体 FCD 数据进行出击限定筛选\n- [舰娘信息] 增加重置全部筛选与显示设置的按钮，支持自定义 CSS 和缩放系数，修正每 HP 维修所需时间\n- [经验计算] 修正竖版布局；同等级舰娘按剩余升级经验值升序排列\n- [远征信息] 修复大发动艇加成计算和显示，增加鬼怒改二、特大发动艇加成计算支持，显示部分未满足条件的具体原因\n- [未卜先知] 下一点信息显示上次战斗阵型，战斗中显示敌我舰队名及敌舰火力、雷击、对空、装甲，可在设置中开关"
+      },
       "en-US": {
         "markdown": "# Feature\n- Add support of Equipment LoS weighting for formula 33\n- Add ships' speed display\n- Add option to turn off last-battle alert\n- Add new equipment icons\n- Better layout setting\n- Add auto-update option for plugins\n- Add safe mode, can be started by `-S` or `--safe` or options in setting panel\n- [Linux] Add tray icon\n- [windows] When `create shortcut on startup` is checked, create an additional icon for launch by safe mode\n# BugFix\n- Fix fcd update issue\n- Fix network retry issue\n- Remove plugins' tsinghua mirror because it's closed",
         "source": "https://github.com/poooi/poi/releases/tag/v7.4.0",
@@ -829,6 +848,12 @@
     "version": "v7.3.0",
     "publishedAt": "2016-12-30T14:18:03Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 实时更新数据模块（FCD）\n- 将地图、活动锁船、海域血量等经常更新的数据放入 FCD（Frequently Changing Data）模块\n- 每次启动 poi 时检查并更新 FCD，每个新版 poi 也附带最新数据；本体和插件不发新版时，这些数据也能实时更新\n- 可在“设置－关于 poi”查看 FCD 版本并手动检查更新\n\n### 功能\n- 支持多海域的陆航信息更新\n- 支持以字母形式显示地图点\n- 支持喷气式飞机相关机制\n- 支持 Flash 显示模式设置\n- 增加用于航空支援的不含熟练度和改修加成的制空值显示\n- 在关于页面增加感谢组织\n\n### 修复\n- 修正退避舰娘的显示，以及空母退避时的制空值计算\n- 修正地图数据不完整时的小地图显示，例如 2016 秋活 E5 解谜\n- 修正网络重连次数设置\n- 修正由 Electron 导致的音量开关、刷新按钮等有时无效的问题\n- [Windows] 修正高分辨率显示情况下的鼠标闪烁问题",
+        "source": "https://m.weibo.cn/detail/4058901639096196",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 重构代码并重新设计界面，支持 6v12、12v12 显示和基地防空结果；配合 7.3.0 及以上本体以字母显示地图点\n- [任务信息] 更新到最新资料\n- [装备改修] 更新到最新资料，支持显示 ne 式引擎作为改修所需材料\n- [经验计算] 加入固定经验值计算模式\n- [战斗详情] 支持喷气强袭和过滤浏览\n- [泊地修理] 修正计时器显示与重置机制"
+      },
       "en-US": {
         "markdown": "# Feature\n- FCD (Frequently Changing Data) Module\n  - frequent updated data are included in this module, including map, ship tagging and last dance HP\n  - every release of poi will contain a copy of FCD data, and poi will download the updates upon initialization\n  - FCD data can be updated without upgrading main poi version\n  - FCD version can be check on About panel, where manually update is also possible\n- Airbase information update for multiple areas supported\n- Alphabetic map cell name supported \n- Jet plane related functionalities\n- Flash display mode settings\n- Fighter power without proficiency and improvement bonus is added\n- Add thanks-to to about page\n\n# Bugfix\n- Retreated ship display, and Fighter Power formula takes retreats into account\n- Mini map display for map cells uncovered in map data\n- Network retry settings\n- Occasionally `remote` exceptions (e.g. game audio switch) introduced by `Electron`\n- Cursor jumping issue on Windows with HiDPI display setting",
         "source": "https://github.com/poooi/poi/releases/tag/v7.3.0",
@@ -851,10 +876,17 @@
     "version": "v7.2.0",
     "publishedAt": "2016-11-17T03:03:22Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 增加小地图和已走过路径的显示，出击中将鼠标移到地图提示栏即可查看，需要“未卜先知”插件支持\n- 增加网格形式的插件菜单，触控设备默认使用；其他设备可在显示设置中手动开启\n- 战斗模拟模块支持 6-5 的深海联合舰队\n\n### 修复\n- 修正海域血量计数问题\n- 修正界面缩放时的截图问题\n- [Windows] 修正退出时无法记录窗口最大化状态的问题",
+        "source": "https://m.weibo.cn/detail/4042909189448775",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] [战斗详情] 支持 6-5 深海联合舰队\n- [装备改修] 显示改修目标和相关消耗，支持查看全部可改修装备，并更新最新资料；感谢 kcwiki、是谁呼叫舰队提供资料\n- [秘书通知] 支持在 poi 关闭游戏声音的情况下播放舰娘报时语音\n- [经验计算] 增加锁定当前舰娘目标等级的功能，以及快速选择第一舰队舰娘的方式\n- 新插件“泊地修理”：预计泊地修理用时，并提供修理完成通知"
+      },
       "en-US": {
-        "markdown": "## Feature\n- Add miniMap to map location indicator (need prophet plugin)\n- Add grid-style plugin menu\n- Add new plugin: anchorage-repair\n\n## Bugfix\n- Add support of enemy combined fleet\n- Fix map-hp issue caused by game update\n- Fix issue on screenshot\n- Fix maximize state not remembered on windows",
+        "markdown": "## Feature\n- Add miniMap to map location indicator (need prophet plugin)\n- Add grid-style plugin menu\n## Bugfix\n- Add support of enemy combined fleet\n- Fix map-hp issue caused by game update\n- Fix issue on screenshot\n- Fix maximize state not remembered on windows",
         "source": "https://github.com/poooi/poi/releases/tag/v7.2.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- Add new plugin: anchorage-repair"
       }
     }
   },
@@ -862,6 +894,12 @@
     "version": "v7.1.0",
     "publishedAt": "2016-09-26T15:44:17Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 在“设置－显示设置”选择以 JPG 或 PNG 格式保存截图\n- 美化拖拽文件手动安装插件的界面\n- 鼠标移到游戏右下角地图提示处时，显示当前所在点\n- 资源栏统一显示所有资源变动量，同时移除补给时的单独铝耗提示\n\n### 修复\n- 修复罕见情况下舰队栏顶部信息无法工作的问题\n- 修复任务计数刷新有时无法正常工作的问题\n- 修复通过文件安装插件后，重启前不更新插件列表或显示安装失败的问题\n- 修复斩杀提示总是弹出的问题\n- 修复使用高速修复剂后资源栏未立即扣除的问题",
+        "source": "https://m.weibo.cn/detail/4024303370238335",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 修复进入新战斗后有时显示上一场部分船只的问题\n- [耗资记录] 支持热启动，未登录游戏时也显示上次登录账号的信息\n- [耗资记录] 增加设置面板，可调整每页记录数量、查看插件简介与更新日志；更新插件后首次启动自动显示日志\n- [耗资记录] 修复部分数据显示错误\n- [任务信息] 更新最新任务\n- [装备改修] 更新最新资料"
+      },
       "en-US": {
         "markdown": "## Feature\n- Update to electron 1.4.1 & flash 23\n- Support save screenshot as JPEG file\n- Add map spot notify as tooltip of map reminder\n- Display resource increment and decrement in resource panel\n\n## Fix\n- Fix crash on fleet info\n- Fix install plugin from tarball crashes setting panel\n- Fix task count refreshing",
         "source": "https://github.com/poooi/poi/releases/tag/v7.1.0",
@@ -895,6 +933,12 @@
     "version": "v7.0.0",
     "publishedAt": "2016-08-23T13:53:54Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "本版重写了大量代码、调整架构，以便后续开发维护并提高性能。\n\n### 插件兼容性\n- 插件逐步迁移到新架构，后续功能、游戏新机制支持和修复主要提供给新版插件\n- 部分新版插件发布在 beta 渠道，可在“设置－扩展程序－高级设置”启用“检查 beta 版插件”后检查更新\n- 新版 poi 提供兼容接口运行旧插件；旧版 poi 无法运行新插件\n- 6.3.0 及之后的旧版会阻止不兼容的插件升级，对已安装的不兼容新版拒绝加载并提供回滚\n- 6.2.x 及更早版本缺少兼容性检查，请勿升级新版插件或通过 poi 内部安装插件；升级后黑屏时需移除对应插件，再安装适用于旧版的离线插件包\n\n### 功能\n- 关闭 poi 后保存主面板数据，未登录游戏时也能查看主面板及舰娘信息等插件内容\n- 提示通知只在登录游戏后触发\n- 在“设置－显示设置”增加 Flash 画质调整，修改时重新载入 Flash\n- 工具栏地图提示在普通海域血条图也显示血条进度\n- 补给消耗铝时，在通知栏显示消耗量\n- 改进活动任务记录：在其他设备修改活动任务后，也能移除旧任务\n- 增加斩杀提醒：进入可能斩杀的地图时弹出窗口内通知，当时支持各 EO 和活动的非运输图\n- 插件更新与插件崩溃改用窗口内通知，不受“通知设置－其它”控制",
+        "source": "https://m.weibo.cn/detail/4011954853275080",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 修复敌舰 CI 未命中时伤害量显示为 -1 的问题\n- [远征信息] 鼠标移到中间栏三个舰队上时，显示不满足的远征条件；出发警告框也列出具体条件\n- [我变强了] 适配最新版本 API\n- [战斗记录] 用表格列出历史战斗记录；首次打开会整理旧记录并显示预计结束时间\n- [舰娘信息] 增加反潜数据"
+      },
       "en-US": {
         "markdown": "## Feature\n- Refactor\n- Add in-window toast as a new notification method\n- Save data on exit\n- Add an option to select quality of flash (applied after refresh)\n- Fighter power formula now includes improvements of fighter \n\n## Fixes\n- Add a workaround of touch screen issue",
         "source": "https://github.com/poooi/poi/releases/tag/v7.0.0",
@@ -928,6 +972,11 @@
     "version": "v6.3.1",
     "publishedAt": "2016-06-30T06:12:24Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 恢复硬件加速开关设置；此前因设置无法生效而移除\n- 优化地址栏使用体验\n\n### 修复\n- 修复游戏更新导致的任务列表清空问题\n- 优化代理层性能，缩短某些非标准代理下过长的黑屏时间\n- [macOS] 修复标题栏无法拖动的问题\n- 修复触屏设备无法点击输入框的问题\n- 尝试修复计时器偶尔停止的问题，原公告对此保留不确定性\n- 加快部分代理下的页面适配\n- 减少检查更新对 npm 服务器的负担，并提高检查速度",
+        "source": "https://m.weibo.cn/detail/3986250061337998",
+        "reconstructed": false
+      },
       "en-US": {
         "markdown": "## Feature\n- Better navigation bar\n\n## Fix\n- Fix input in webview not focusable in some touchscreen devices\n- Fix task list dont refresh caused by game updates\n- Fix title bar not draggable on macOS\n- Performance improvment on proxy",
         "source": "https://github.com/poooi/poi/releases/tag/v6.3.1",
@@ -939,6 +988,11 @@
     "version": "v6.3.0",
     "publishedAt": "2016-06-08T06:41:56Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 使用 33 式作为默认索敌公式\n- 增加本体韩语翻译，感谢 CirnoV 提供\n- 改善插件兼容性检测，为后续插件兼容检查提供支持\n- 更新到 Chrome 51\n- 增加陆攻和局战高清图标\n- 支持最新的“装备中舰娘”切换装备功能\n\n### 修复\n- 修复部分主题下截图按钮提示条也被截进图片的问题",
+        "source": "https://m.weibo.cn/detail/3986250061337998",
+        "reconstructed": false
+      },
       "en-US": {
         "markdown": "## Update\n- Use 33 formula for default\n- Add Korean translation ( Thanks to @CirnoV )\n- Better plugin compatibility check rule\n- Add SVG icon of land-based bomber and fighter\n- Update to Chrome 51\n- Update to Flash 21\n\n## Fix\n- Fix black bar sometimes appears in screenshot",
         "source": "https://github.com/poooi/poi/releases/tag/v6.3.0",
@@ -950,10 +1004,17 @@
     "version": "v6.2.0",
     "publishedAt": "2016-05-14T07:46:17Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 根据 2016 春活更新贴条信息\n- 支持新装备类别图标，当时暂未提供对应高清图标\n- 增加 33 式索敌公式，默认仍显示 2-5 秋式，鼠标放到索敌上可查看 33 式\n- 网络错误信息增加更细化的提示\n- 支持花骑士、社长娘、刀剑乱舞、真剑、城娘等多个 DMM 游戏的用户缓存包\n- 舰娘缓存包由闪电图标打开的根目录移到其 kancolle 子目录，需手动移动原缓存包\n- 在“设置－基本设置”底部增加取消网络提示的选项\n\n### 修复\n- 修复氪金页面无法点击购买按钮的问题",
+        "source": "https://m.weibo.cn/detail/3975356639554424",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- 新插件“签名生成”：根据 threebards.com/kaini 自动生成改二收集进度表和图鉴收集进度表签名图片\n- [未卜先知] 正确计算我方陆航支援伤害，并显示陆航空袭点结果\n- [舰船信息] 支持按贴条筛选\n- [任务信息] 更新最近新增的任务"
+      },
       "en-US": {
-        "markdown": "#### Feature\n- Add icons of new planes\n- New plugin: K2badge\n  - Export data to http://threebards.com/kaini/\n- Support new LOS formula 33\n- Option to disable network status indicate\n- Support 3rd-party cache for some DMM games\n\n#### Fix\n- Fix wrong position of paying alert caused by DMM API change\n\n#### Plugins\n- Support new land-based air force system",
+        "markdown": "#### Feature\n- Add icons of new planes\n- Support new LOS formula 33\n- Option to disable network status indicate\n- Support 3rd-party cache for some DMM games\n\n#### Fix\n- Fix wrong position of paying alert caused by DMM API change",
         "source": "https://github.com/poooi/poi/releases/tag/v6.2.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- New plugin: K2badge\n  - Export data to http://threebards.com/kaini/\n#### Plugins\n- Support new land-based air force system"
       }
     }
   },
@@ -1005,25 +1066,29 @@
     "version": "v6.0.0",
     "publishedAt": "2016-03-21T01:55:15Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 插件 API 2.0\n- 安装、更新和启用插件不再需要重启 poi，但可能需要刷新 Flash\n- 旧版本本体使用新版本插件会导致 poi 无法运行，请先更新本体\n- 新版插件可以在“设置－扩展程序”中直接更新；插件开发者请查阅 GitHub Wiki 的插件开发文档\n\n### 功能\n- 增加消息历史记录功能，点击消息栏即可弹出历史记录\n\n### 修复\n- 修正制空计算公式\n- 修复月常 7 次演习可能导致 poi 卡死的问题\n- 修复任务计数可能不正常工作的问题",
+        "source": "https://m.weibo.cn/detail/3955412493460287",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- 新插件“kcwiki 语音字幕”：舰娘说话时在消息栏显示翻译字幕；发布时仍有部分语音错误和混乱待修正\n- [未卜先知] 点击船名可以显示船只装备\n- [秘书通知] 因游戏移除入渠语音，改用 26 号语音代替\n- [改修信息] 更新到最新改修信息"
+      },
       "en-US": {
-        "markdown": "### Features\n\n- Click the notification bar to review recent messages\n- Add the KCwiki Quotes Translator plugin to the plugin list, providing Chinese subtitles for ship voices\n- Detect plugins that require a newer poi version and offer a compatible version instead",
+        "markdown": "### Features\n\n- Click the notification bar to review recent messages\n- Detect plugins that require a newer poi version and offer a compatible version instead",
         "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
-        "reconstructed": true
+        "reconstructed": true,
+        "pluginMarkdown": "- Add the KCwiki Quotes Translator plugin to the plugin list, providing Chinese subtitles for ship voices"
       },
       "ja-JP": {
-        "markdown": "### 新機能\n\n- 通知バーをクリックして最近の通知を確認できるように変更\n- 艦娘のセリフに中国語字幕を付けるKCwiki Quotes Translatorをプラグイン一覧に追加\n- より新しいpoiを必要とするプラグインを検出し、互換性のあるバージョンを案内",
+        "markdown": "### 新機能\n\n- 通知バーをクリックして最近の通知を確認できるように変更\n- より新しいpoiを必要とするプラグインを検出し、互換性のあるバージョンを案内",
         "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
-        "reconstructed": true
-      },
-      "zh-CN": {
-        "markdown": "### 功能\n\n- 点击通知栏可查看最近的通知记录\n- 在插件列表中添加 kcwiki 语音字幕插件，为舰娘语音提供中文字幕\n- 识别需要更新版本 poi 的插件，并提供兼容版本",
-        "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
-        "reconstructed": true
+        "reconstructed": true,
+        "pluginMarkdown": "- 艦娘のセリフに中国語字幕を付けるKCwiki Quotes Translatorをプラグイン一覧に追加"
       },
       "zh-TW": {
-        "markdown": "### 功能\n\n- 點選通知列即可查看最近的通知紀錄\n- 在外掛列表中新增 kcwiki 語音字幕外掛，為艦娘語音提供中文字幕\n- 識別需要較新版本 poi 的外掛，並提供相容版本",
+        "markdown": "### 功能\n\n- 點選通知列即可查看最近的通知紀錄\n- 識別需要較新版本 poi 的外掛，並提供相容版本",
         "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
-        "reconstructed": true
+        "reconstructed": true,
+        "pluginMarkdown": "- 在外掛列表中新增 kcwiki 語音字幕外掛，為艦娘語音提供中文字幕"
       }
     }
   },
@@ -1031,6 +1096,12 @@
     "version": "v5.2.0",
     "publishedAt": "2016-02-24T17:30:55Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "5.1.0 及之后的版本可以直接使用更新包更新。\n\n### 功能\n- [Windows] [Linux] 增加菜单，按 Alt 显示；Windows 也可右键托盘图标打开。“锁定窗口大小”“窗口总在最前”等选项移入菜单\n- 鼠标移到主面板装备上时显示装备属性详情\n- 适配 2016 冬活数据\n\n### 修复\n- 优化 Flash 尺寸适配机能\n- 提高主面板渲染效率，减少卡顿\n- 建造面板的部分图标支持高清图标\n- 修复开启静音后重启 poi 可能未应用的问题\n- [Windows] 修复可能出现大量托盘图标的问题\n- [Windows] 修复杀毒软件阻止创建快捷方式而导致 poi 无法启动的问题\n- 短时间内多次提示不再多次播放提示音",
+        "source": "https://m.weibo.cn/detail/3946340138599327",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 增加陆基航空战血量计算支持和 2016 冬活各图的罗盘指针预测\n- [舰娘信息] 支持高清图标\n- [装备信息] 增加“只显示锁定／未锁定装备”筛选，扩大右键装备“仅选中该装备”的响应范围\n- [秘书语音] 修复游戏更新采用新语音路径后出现的问题\n- [耗资记录] 修复联合舰队二队、带支援舰队的出击无法记录的问题\n- [耗资记录] 修复部分筛选器以及有时使用修复桶无法正常记录的问题\n- [耗资记录] 婚船出击的油弹消耗减少 15%"
+      },
       "en-US": {
         "markdown": "> Update patch is available for 5.1.0 and later versions.\n\n## Features\n- Added \"Menu\" to Windows and Linux.\n  - Menu is visible by pressing Alt. It is also available by right clicking the tray icon on Windows.\n  - Options including \"Window resizable\" and \"Window always on top\" are moved to the menu.\n- Moving your mouse over equipment icons on the main panel will now prompt equipment stats.\n- Now support changes brought in by 16Winter event.\n\n## Fixes\n- Improved the auto-adjustment of Flash size.\n- Improved the rendering efficiency of the main panel.\n- More icons in the main panel support HD icons.\n- Fixed a problem that prevents \"Muted\" to be applied on the start up of poi.\n- Fixed a problem that causes a number of tray icons to appear in Windows.\n- Fixed a problem where poi will not properly start when anti-virus softwares prevent poi from creating shortcut.\n- Notification audio will only set off once if multiple notifications set off during a short time.",
         "source": "https://github.com/poooi/poi/releases/tag/v5.2.0",
@@ -1042,10 +1113,17 @@
     "version": "v5.1.0",
     "publishedAt": "2016-02-10T01:47:42Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 网络代理设置添加 PAC 支持（实验性功能）\n- 添加插件设置功能；当时唯一支持设置的“未卜先知”还没有实际使用设置\n- 通过插件名安装插件时增加安装进度提示\n- [OS X] 可以通过 Cmd + 逗号访问设置面板\n- 在各面板之间切换时增加动画\n- 网络设置增加端口号选项：默认每次启动选择随机可用端口，也可沿用固定端口；固定端口被占用时弹出警告\n\n### 修复\n- 修复通过插件名安装插件有时失败的问题\n- 修复 Flash 分辨率尺寸限制有时过于宽松的问题\n- 修复运行 poi 时打开低分辨率程序导致 poi 窗口尺寸变化的问题\n- 修复刚打开 poi 时设置面板无法滚动的问题\n- [Windows 10] 修复通知语音与系统默认通知音效同时触发的问题\n- 修改默认皮肤，修复启动全新 poi 时有时无法操作的问题\n- 美化近代化改修结果提示界面\n- 切换切分／不切分面板不再需要重启 poi，部分插件仍需刷新游戏才生效\n- 修复有时启动窗口位于屏幕外的问题",
+        "source": "https://m.weibo.cn/detail/3940879708255765",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- 新插件“耗资记录”：记录每次出击的资源损耗，提供筛选和统计\n- 新插件“舰娘百科数据收集”：自动向舰娘百科汇报船只数值、地图资源点等数据，帮助 wiki 编写\n- [航海日志] 移除已由“我变强了”提供的战果模块，解决有时启动白屏的问题\n- [未卜先知] 编成和入渠时也会更新数据"
+      },
       "en-US": {
-        "markdown": "## Features\n- Added \"PAC file\" to proxy settings. (Experimental feature)\n- Added support for individual settings of plugins.\n  - (However, the only supporting plugin \"Prophet\" has yet to really apply that setting. So please look forward to future versions.)\n- Added installation progress notification when installing plugin by plugin-name.\n- Added shortcut `Cmd+,`  (comma) to switch to Settings panel under OS X.\n- Added transition animation when switching between panels.\n- Add option for \"poi port\" under Network Settings panel.\n  - The default behaviour is to use a random port on every start up.\n  - You can change and set a fixed port as poi used to do. In this case, an alert will pop up if that port has been used on start up.\n\n## Fixes\n- Fixed an issue that could prevent a plugin from being properly installed by name.\n- The limit on resolution of Flash is now stricter and will take consideration of zoomming.\n- poi will no longer shrink to a low resolution when opening another low-resolution programming.\n- The settings panel will be able to scroll from the very beginning of the start up.\n- The notification sound effect of Windows will no longer be also triggered upon notification.\n- Changed the default theme therefore fixing an issue that may cause poi to be unresponsive at a fresh start.\n- The interface of modernization notification has been polished.\n- Switching between single tab and double tab now no longer requires a restart, but some plugins might need the flash to refresh in order to properly work.\n- Fixed an issue that causes the window to be out of the visible screen in some cases.\n\n## Plugins\n- New plugin: **Where's My Fuel Gone**\n  - Records the resource consumption during sortie. Filter, analyse.\n- New plugin: **Kcwiki data collection**\n  - Automatically collect data and reports to Kcwiki, `http://zh.kcwiki.moe/`, including ship stats, map resources, among others. Please support the construction of our wiki if possible :)\n- Logbook\n  - Removed the \"Senka\" panel (this feature has been provided by another plugin \"SenkaCalc\"), therefore solving an issue that causes this plugin to crash under some cases.\n- Prophet\n  - Data will now be refreshed when changing composition and docking.",
+        "markdown": "## Features\n- Added \"PAC file\" to proxy settings. (Experimental feature)\n- Added support for individual settings of plugins.\n  - (However, the only supporting plugin \"Prophet\" has yet to really apply that setting. So please look forward to future versions.)\n- Added installation progress notification when installing plugin by plugin-name.\n- Added shortcut `Cmd+,`  (comma) to switch to Settings panel under OS X.\n- Added transition animation when switching between panels.\n- Add option for \"poi port\" under Network Settings panel.\n  - The default behaviour is to use a random port on every start up.\n  - You can change and set a fixed port as poi used to do. In this case, an alert will pop up if that port has been used on start up.\n\n## Fixes\n- Fixed an issue that could prevent a plugin from being properly installed by name.\n- The limit on resolution of Flash is now stricter and will take consideration of zoomming.\n- poi will no longer shrink to a low resolution when opening another low-resolution programming.\n- The settings panel will be able to scroll from the very beginning of the start up.\n- The notification sound effect of Windows will no longer be also triggered upon notification.\n- Changed the default theme therefore fixing an issue that may cause poi to be unresponsive at a fresh start.\n- The interface of modernization notification has been polished.\n- Switching between single tab and double tab now no longer requires a restart, but some plugins might need the flash to refresh in order to properly work.\n- Fixed an issue that causes the window to be out of the visible screen in some cases.",
         "source": "https://github.com/poooi/poi/releases/tag/v5.1.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "## Plugins\n- New plugin: **Where's My Fuel Gone**\n  - Records the resource consumption during sortie. Filter, analyse.\n- New plugin: **Kcwiki data collection**\n  - Automatically collect data and reports to Kcwiki, `http://zh.kcwiki.moe/`, including ship stats, map resources, among others. Please support the construction of our wiki if possible :)\n- Logbook\n  - Removed the \"Senka\" panel (this feature has been provided by another plugin \"SenkaCalc\"), therefore solving an issue that causes this plugin to crash under some cases.\n- Prophet\n  - Data will now be refreshed when changing composition and docking."
       }
     }
   },
@@ -1053,6 +1131,12 @@
     "version": "v5.0.0",
     "publishedAt": "2016-01-08T12:33:01Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 全新的插件中心\n- 插件可以独立下载、启用／禁用和升级，不必等待 poi 本体更新；任务信息等插件可以随游戏更新及时补充内容\n- 本体发布包不再内置插件，第一次打开后在插件中心点击安装；插件改存于系统用户目录，删除本体也会保留插件\n- 提供多个插件下载服务器，可在“设置－扩展程序－高级设置”中切换后重启 poi\n- 无法在线下载时可使用离线包：解压 poi-plugins 压缩包后，在插件中心安装其中的 .tgz 文件；每次本体发布附带当时最新版官方插件离线包\n- 官方插件未安装时也会显示在列表中；第三方插件以 poi-plugin- 开头发布到 npmjs.com，可以输入插件名称安装或使用离线包\n- 插件中心可以搜索插件；每次本体更新会汇总上次以来的插件更新\n\n### 功能\n- 增加重新绘制的高清图标，可在显示设置中开启；图标采用扁平化风格，当时仍在持续改进\n- 增加“小提示”：启动时及之后每半小时在状态栏显示隐藏功能、注意事项和知识，可在设置中关闭\n- 状态栏显示近代化改修结果和各属性增加量；“++”与“+”分别表示火雷空甲的全加／加一半，以及运的向上／向下取整\n- 通知设置可调整远征提前提示秒数和疲劳恢复线\n- 出击检查可设置舰娘和装备的所需空余数量\n- 增加老板键自定义；Mac 也可使用系统 Cmd + H\n- 增加缓存目录自定义；浏览器缓存目录不能修改\n- 可按百分比设置 Flash 尺寸\n- 状态栏增加“锁定窗口大小”设置和“屏蔽 DMM 网络变更警告”选项\n- 舰队界面对未装备的装备格显示搭载数\n- 快捷工具栏可折叠不常用功能，点击箭头展开\n- 状态栏地图提示显示活动图的甲乙丙难度\n- 脚本在发布前预编译，以改善启动速度\n- 本体改用 .asar 打包，减少路径过长问题并加快解压；更新包由 app.7z 改为 app.asar\n\n### 修复\n- 窗口尺寸设置增加上限，防止误操作导致尺寸过大\n- 修正部分外观问题\n- Electron 更新到 v0.36.3；原公告表示 Windows 内存泄漏“可能得到了改善”",
+        "source": "https://m.weibo.cn/detail/3929432446695824",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- 新插件“英语翻译”：语言设为英语时，将舰名、装备名和物品名等翻译为英语\n- 新插件“我变强了”：计算战果、跟踪战果排名并提供相关信息\n- 新插件“秘书通知”：把提示音换成所选舰娘语音；恢复原提示音需点击插件中的“禁用”按钮\n- 重新介绍“舰娘黄历”：原先已有的娱乐插件加入官方列表\n- [未卜先知] 增加出击掉落物品通知\n- [经验计算] 选择演习对手后，在状态栏显示预计经验和练巡加成；此预估偶尔可能有较大偏差\n- [经验计算] 已超过当前改造等级时显示下一次改造等级，等级上限提高到 155\n- [任务信息] 增加全部任务条件和奖励的英语、日语翻译，更新任务并修正部分前置条件\n- [编成日记] 改善界面，在导入时可预览当前舰队而无需实际添加记录\n- [航海日志] 与战斗详情联动，点击出击页面每行开头的图标可直接查看该场战斗详情；改善外观、兼容性和效果\n- [装备改修] 每件装备前增加多选框，选中后可置顶关注的装备\n- [舰娘信息] 增加“近代化改修完成”筛选\n- [装备信息] 飞机按熟练度分类，同一艘船装备多件同种装备时显示数量，并修正外观\n- [一心二用] 修复打开时偶尔崩溃的问题"
+      },
       "en-US": {
         "markdown": "### Update Electron to v0.36.3\n- NOOOOO MOREEEEEE MEEEEEEEEMORY LEEEEEEAKS!!!\n\n### Feature\n- Small improvements on plugin tab\n\n### bugfix\n- Fix bugs when set a huge size to webview",
         "source": "https://github.com/poooi/poi/releases/tag/v5.0.0",
@@ -1064,10 +1148,17 @@
     "version": "v4.2.0",
     "publishedAt": "2015-11-19T12:44:40Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 更新 2015 秋活相关的数据与贴条注释\n\n### 变更\n- 缓存目录发生变化，使用工具栏的闪电图标打开目录后重新放入缓存\n- 内置 shadowsocks 模块长时间未更新且存在诸多问题，从本版起移除",
+        "source": "https://m.weibo.cn/detail/3911244647899100",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [未卜先知] 添加秋活地图信息以支持罗盘剧透\n- [战斗详情] 损管消耗时添加图标提示\n- [远征信息] 添加秋活支援远征的必要条件\n- [远征信息] 修正远征 15 不允许装母的错误\n- [任务信息] 修复岩本小队系列任务中的一项任务说明\n- [编成日记] 修复删除空舰队时崩溃的问题\n- [数据汇报] 修复在设置中关闭插件后仍继续汇报数据的问题\n- [舰娘信息] 修复记录窗口位置的相关问题"
+      },
       "en-US": {
-        "markdown": "**General**\n- Updated data for 15Fall Event.\n\n**Features**\n- Removed built-in shadowsocks module for being outdated.\n- Changed the cache directory in Windows.\n- [Prophet] Added map information of 15Fall Event for compass prediction.\n- [Battle detail] Usage of damage control personnels is now indicated by an icon.\n- [Expedition] Added condition for the two expeditions of 15Fall event.\n\n**Bugfix**\n- [Expedition] Expedition 15 now allows armored carriers.\n- [Quests] Fixed a mistake in the quest condition from the Mitsumoto series.\n- [Hensei Nikki] Fixed crashing when deleting a fleet record that is empty.\n- [Report] This plugin now correctly stops reporting data after being disabled in the settings.\n- [Ship info] Now correctly remembers the last window position.\n\n# v4.2.1\n\n**Bugfix**\n- Fixed the bug that caused cache merging with user cache in Windows in v4.2.0.",
+        "markdown": "**General**\n- Updated data for 15Fall Event.\n\n**Features**\n- Removed built-in shadowsocks module for being outdated.\n- Changed the cache directory in Windows.\n**Bugfix**\n# v4.2.1\n\n**Bugfix**\n- Fixed the bug that caused cache merging with user cache in Windows in v4.2.0.",
         "source": "https://github.com/poooi/poi/releases/tag/v4.2.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- [Prophet] Added map information of 15Fall Event for compass prediction.\n- [Battle detail] Usage of damage control personnels is now indicated by an icon.\n- [Expedition] Added condition for the two expeditions of 15Fall event.\n\n- [Expedition] Expedition 15 now allows armored carriers.\n- [Quests] Fixed a mistake in the quest condition from the Mitsumoto series.\n- [Hensei Nikki] Fixed crashing when deleting a fleet record that is empty.\n- [Report] This plugin now correctly stops reporting data after being disabled in the settings.\n- [Ship info] Now correctly remembers the last window position."
       }
     }
   },
@@ -1075,10 +1166,17 @@
     "version": "v4.1.0",
     "publishedAt": "2015-11-10T07:15:22Z",
     "notes": {
+      "zh-CN": {
+        "markdown": "### 功能\n- 舰队面板会随着编成展开机能和装备交换机能而变更\n- 在设置中可以自定义截图目录，可以把文件夹拖进去\n- 新皮肤 darklykai\n\n### 修复\n- 低保中的资源图标正常发光\n- 选择插件的下拉菜单过长时可以滚动\n- 解决竖版界面在某种设置下的不正常适配问题\n- 网络代理设置重新排版以避免误导",
+        "source": "https://m.weibo.cn/detail/3908501422111973",
+        "reconstructed": false,
+        "pluginMarkdown": "### 插件更新\n- [任务信息] 更新到最新实装的任务\n- [战斗详情] 本回合内所受的伤害会用浅色条显示，正确反映损管和女神使用时的血量回复\n- [战斗详情] 增加“战斗信息”部分，点击标题栏即可展开\n- [编成日记] 支持“是谁呼叫舰队”编成代码中的飞机熟练度\n- [未卜先知] 在战斗结束时根据收到的数据修正 MVP 指示\n- [舰娘信息] 可以点击表头排序，加入“是否能进行改造”的筛选选项\n- [航海日志] 修复未响应的问题\n- [任务信息] 根据 wiki 修正一些前置任务信息\n- [编成日记] 正确显示索敌"
+      },
       "en-US": {
-        "markdown": "**Feature**\n- The ship info panel now supports the new fleet expansion and equipment exchange feature.\n- The directory to screenshots can now be customized in settings.\n- A new theme _darklykai_.\n- [Quest] Updated to the latest quests.\n- [Battle detail] New features.\n  - The HP lost in the current round now displays in shadow.\n  - The HP recovered from damage control personnels is now correctly calculated.\n  - Added \"Battle info\" panel. Click that title to expand.\n- [Hensei Nikki] Now supports aircraft proficiency in the fleet code from Who Calls the Fleet.\n- [Prophet] Now correct the MVP fleet according to the battle result received.\n- [Fleet info] New features.\n  - The table headers are now clickable to sort the corresponding column.\n  - New filter: whether a ship can remodel.\n\n**Bugfix**\n- The icons of regenerating resources now normally glow.\n- The dropdown menu of plugin selection are now scrollable when too long.\n- Vertical layout now correctly adjusts the window in non-standard zooming and width settings.\n- Proxy settings are reworded to avoid confusion.\n- [Akashic records] Fixed some no-responding problems.\n- [Quest] Fixed prerequisites of some tasks according to jp-wiki.\n- [Hensei Nikki] Now correctly handles LOS.",
+        "markdown": "**Feature**\n- The ship info panel now supports the new fleet expansion and equipment exchange feature.\n- The directory to screenshots can now be customized in settings.\n- A new theme _darklykai_.\n**Bugfix**\n- The icons of regenerating resources now normally glow.\n- The dropdown menu of plugin selection are now scrollable when too long.\n- Vertical layout now correctly adjusts the window in non-standard zooming and width settings.\n- Proxy settings are reworded to avoid confusion.",
         "source": "https://github.com/poooi/poi/releases/tag/v4.1.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- [Quest] Updated to the latest quests.\n- [Battle detail] New features.\n  - The HP lost in the current round now displays in shadow.\n  - The HP recovered from damage control personnels is now correctly calculated.\n  - Added \"Battle info\" panel. Click that title to expand.\n- [Hensei Nikki] Now supports aircraft proficiency in the fleet code from Who Calls the Fleet.\n- [Prophet] Now correct the MVP fleet according to the battle result received.\n- [Fleet info] New features.\n  - The table headers are now clickable to sort the corresponding column.\n  - New filter: whether a ship can remodel.\n\n- [Akashic records] Fixed some no-responding problems.\n- [Quest] Fixed prerequisites of some tasks according to jp-wiki.\n- [Hensei Nikki] Now correctly handles LOS."
       }
     }
   },
@@ -1087,9 +1185,10 @@
     "publishedAt": "2015-10-22T03:01:13Z",
     "notes": {
       "en-US": {
-        "markdown": "Changelog\n\n**Update Electron to v0.34.0**\n- Fix --ppapi-flash-path failed to recognize path with unicode characters \n- (NO MORE 'Couldn't load plugin' error! Cheers!)\n\n**Bugfix**\n- Update plugins\n- Remove tons of warnings\n- Other bugfix\n\n**Change**\n- Use hidden title bar in OSX\n- Update Pepper Flash to v19\n- Update tasks and improveable-item data\n- Add new plugin(plugin-battle-detail)\n- Rearrange setting items\n- Add DMM region flag setting\n- Add http proxy authorization setting\n- Add individual notification setting\n- Move compass to prophet plugin\n- UI Fix.",
+        "markdown": "Changelog\n\n**Update Electron to v0.34.0**\n- Fix --ppapi-flash-path failed to recognize path with unicode characters \n- (NO MORE 'Couldn't load plugin' error! Cheers!)\n\n**Bugfix**\n- Update plugins\n- Remove tons of warnings\n- Other bugfix\n\n**Change**\n- Use hidden title bar in OSX\n- Update Pepper Flash to v19\n- Update tasks and improveable-item data\n- Rearrange setting items\n- Add DMM region flag setting\n- Add http proxy authorization setting\n- Add individual notification setting\n- Move compass to prophet plugin\n- UI Fix.",
         "source": "https://github.com/poooi/poi/releases/tag/v4.0.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- Add new plugin(plugin-battle-detail)"
       }
     }
   },
@@ -1120,9 +1219,10 @@
     "publishedAt": "2015-09-09T15:56:07Z",
     "notes": {
       "en-US": {
-        "markdown": "Changelog\n\n**Update Electron to v0.32.1.**\n\n**Bugfix**\n- Update plugins.\n- Fix A-gou quest counter.\n- Fix whitespace of webview when resizing.\n\n**Change**\n- Change screenshot directory to appdata.\n- Add new plugin(plugin-hensei-nikki) for test.\n- Add more rank bonuses data.\n- UI Fix.\n- Change default theme to _Papercyan_.",
+        "markdown": "Changelog\n\n**Update Electron to v0.32.1.**\n\n**Bugfix**\n- Update plugins.\n- Fix A-gou quest counter.\n- Fix whitespace of webview when resizing.\n\n**Change**\n- Change screenshot directory to appdata.\n- Add more rank bonuses data.\n- UI Fix.\n- Change default theme to _Papercyan_.",
         "source": "https://github.com/poooi/poi/releases/tag/v3.5.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "- Add new plugin(plugin-hensei-nikki) for test."
       }
     }
   },
@@ -1208,9 +1308,10 @@
     "publishedAt": "2015-06-22T15:26:01Z",
     "notes": {
       "en-US": {
-        "markdown": "Changelog\n\n**Feature**\n- Add always-on-top, devtools in controller bar\n- Add condition notification\n- Add Saku calculation details\n\n**Bugfix**\n- Fix animation bug in settings view.\n- Fix controller bar in game resolution 0x0\n\n**Plugins**\n- Update plugins",
+        "markdown": "Changelog\n\n**Feature**\n- Add always-on-top, devtools in controller bar\n- Add condition notification\n- Add Saku calculation details\n\n**Bugfix**\n- Fix animation bug in settings view.\n- Fix controller bar in game resolution 0x0",
         "source": "https://github.com/poooi/poi/releases/tag/v2.1.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "**Plugins**\n- Update plugins"
       }
     }
   },
@@ -1230,9 +1331,10 @@
     "publishedAt": "2015-06-19T08:29:22Z",
     "notes": {
       "en-US": {
-        "markdown": "Changelog\n\n**Update Electron to v0.28.2**\n\n### poi\n- Add win / mac icon\n- Add win32 notification\n- Add screenshot and mute\n- UI fix\n- Add confirming before quit\n- Add network error notification\n- Add extra css support\n\n### plugins\n- Update plugins\n- Add new-window plugin\n- Add quest-info plugin\n- Add almanac plugin",
+        "markdown": "Changelog\n\n**Update Electron to v0.28.2**\n\n### poi\n- Add win / mac icon\n- Add win32 notification\n- Add screenshot and mute\n- UI fix\n- Add confirming before quit\n- Add network error notification\n- Add extra css support",
         "source": "https://github.com/poooi/poi/releases/tag/v2.0.0",
-        "reconstructed": false
+        "reconstructed": false,
+        "pluginMarkdown": "### plugins\n- Update plugins\n- Add new-window plugin\n- Add quest-info plugin\n- Add almanac plugin"
       }
     }
   },

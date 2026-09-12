@@ -15,6 +15,18 @@ Each entry has a version, the original GitHub publication timestamp when one exi
 - Publication dates are kept as published, even where an old GitHub Release appears to have been republished later. Ordering is by version, not timestamp. The missing publication timestamp for `v10.2.1` is `null`; no publication date is invented from a Git commit date.
 - The original `v4.2.0` body includes a `v4.2.1` subsection. It remains within that original text; no separate tagged release is invented.
 
+## Official Weibo archive
+
+The original Simplified Chinese announcements by 今天poi出新版本了吗 (UID 5726583591) are transcribed in `weibo/vX.Y.Z.md`. `weibo.json` records canonical mobile post links, original image URLs, additional evidence and editorial decisions. Image originals are kept in `weibo/images/`; `weibo/image-sources.json` maps local files to their public sources.
+
+Stable notes cover the development cycle since the previous stable version. Beta announcements are source material when a final announcement only lists the final delta; a cumulative final image supersedes repeated beta text. Corrections and removals take precedence. A beta-only regression is not presented as a fix affecting the previous stable. A later patch's changes are not moved into an earlier stable entry. No beta entries are added to `stable.json`.
+
+Original repository translations still take precedence. Weibo supplies missing Simplified Chinese; other languages retain their original notes or English fallback. The recovered v6.0.0 Chinese replaces its reconstructed summary, while unavailable translations remain explicitly reconstructed. v7.5.0 combines its beta announcement with a code-verified final resource-display addition and is explicitly marked reconstructed. Transcriptions normalize formatting and remove repeated delta sections; they are not newly invented release notes.
+
+Plugin release details are preserved in each note's optional `pluginMarkdown` field. The website displays only `markdown` (main application changes). Plugin management, compatibility and automatic updating implemented in poi itself remain main application features. The complete source Markdown and images retain the original plugin details.
+
+The currently visible account history begins on 2015-10-17. No Weibo originals for v1–v3 have been recovered. The v4.0.0 release post and screenshots survive, but its linked detailed article no longer opens; its English notes remain in place. See `weibo/unresolved.json` for the surviving sources and the unresolved gap. Publication timestamps remain the original GitHub metadata, not dates inferred from reposts.
+
 ## Rebuild
 
 Requirements: Node.js, Git, full local `poi`, `website` and `poi-server` checkouts, the `poi` tags, the remote branch `origin/master` in both historical website repositories, and GitHub CLI access to the public `poooi/poi` releases. The old website and server checkouts default to `../website` and `../poi-server`; optional third and fourth arguments override those paths.
@@ -32,6 +44,6 @@ gh api 'repos/poooi/poi/releases?per_page=100' --paginate --jq '.[] | {tag: .tag
 node scripts/rebuild-history.mjs ../poi releases.jsonl
 ```
 
-The generator reads committed stable Markdown history, selects the latest text for each version and language, merges it with published release bodies, and applies reviewed reconstructions only where the English original is missing. It fails for unaccounted-for stable tags rather than silently dropping a release. Review and commit the regenerated archive after release notes have been committed, especially at major-version resets. Never reset the archive with the current-major Markdown files.
+The generator reads committed stable Markdown history, selects the latest text for each version and language, merges it with published release bodies, fills missing Chinese from the reviewed Weibo archive, and applies reviewed reconstructions only where an original is missing. It fails for unaccounted-for stable tags rather than silently dropping a release. Review and commit the regenerated archive after release notes have been committed, especially at major-version resets. Never reset the archive with the current-major Markdown files.
 
 The website reads `history/stable.json` from `main`. Publish this data before deploying the website consumer; until it is available, the website keeps current notes visible and reports that some history could not be loaded.

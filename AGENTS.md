@@ -134,3 +134,6 @@ here. A local checkout is usually at `../poi`.
 - Preserve available original translations. For older releases with no translation, leave that language absent so the website can show the English original; do not label English text as translated.
 - Explicitly reconstructed entries belong in history/reconstructed.json, with reviewed code evidence and all four language summaries. Keep their reconstructed flag when generating the archive.
 - Archive-only restoration does not represent a new release and must not change latest.json or the root channel files.
+
+- Historical beta announcements may be source material for cumulative stable notes. Keep only stable entries in history/stable.json; store official Weibo text, image evidence and editorial decisions under history/weibo/ and history/weibo.json.
+- Preserve historical plugin details in pluginMarkdown for archival use; markdown is reserved for main application notes consumed by the website. Plugin management and compatibility features in poi itself remain main application changes.

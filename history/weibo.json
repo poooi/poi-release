@@ -1,0 +1,223 @@
+{
+  "v4.1.0": {
+    "source": "https://m.weibo.cn/detail/3908501422111973",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztgw1exym4j92duj30l00oeqel.jpg"
+    ],
+    "additionalSources": [],
+    "editorial": "正式版完整配图已包含公开测试版的功能；不重复列出测试版截图目录设置回归。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1exym4j92duj30l00oeqel.jpg"
+    ]
+  },
+  "v4.2.0": {
+    "source": "https://m.weibo.cn/detail/3911244647899100",
+    "images": [
+      "https://ww2.sinaimg.cn/large/006fy9Ztgw1ey7dbgnfkaj30tk0oi784.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/3911268429837912"
+    ],
+    "editorial": "正文配图与作者补充帖合并；GitHub 原文的 v4.2.1 小节不归入 v4.2.0 的中文更新。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1ey7dbgnfkaj30tk0oi784.jpg"
+    ]
+  },
+  "v5.1.0": {
+    "source": "https://m.weibo.cn/detail/3940879708255765",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztgw1f0toyle1f4j31261h2gwv.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/3938479216144628",
+      "https://m.weibo.cn/detail/3939792539974595"
+    ],
+    "editorial": "正式版完整配图覆盖 beta.0、beta.1；保留原公告功能与插件说明并统一 Markdown 格式。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f0toyle1f4j31261h2gwv.jpg"
+    ]
+  },
+  "v5.2.0": {
+    "source": "https://m.weibo.cn/detail/3946340138599327",
+    "images": [
+      "https://ww4.sinaimg.cn/large/006fy9Ztgw1f1bbwss52gj31261in12w.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/3942329259383625",
+      "https://m.weibo.cn/detail/3944573313230954"
+    ],
+    "editorial": "正式版完整配图已包含 beta.0、beta.2 的功能与插件变更。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f1bbwss52gj31261in12w.jpg"
+    ]
+  },
+  "v6.0.0": {
+    "source": "https://m.weibo.cn/detail/3955412493460287",
+    "images": [
+      "https://ww2.sinaimg.cn/large/006fy9Ztjw1f248zblv2uj312f1hs7cn.jpg"
+    ],
+    "additionalSources": [
+      "https://github.com/poooi/poi/compare/v6.0.0...v6.0.1",
+      "https://m.weibo.cn/detail/3955413018281127"
+    ],
+    "editorial": "来源公告后来标为 6.0.1，但完整配图列的是 6.0 开发周期内容。核对 v6.0.0...v6.0.1 仅含非固定分辨率窗口宽高修复、删除 window._delay 与版本号，未将这些补丁归入本条。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1f248zblv2uj312f1hs7cn.jpg"
+    ]
+  },
+  "v7.0.0": {
+    "source": "https://m.weibo.cn/detail/4011954853275080",
+    "images": [
+      "https://ww4.sinaimg.cn/large/006fy9Ztgw1f74nnxgbzcj312m1y5h4f.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/4004373170568499",
+      "https://github.com/poooi/poi/compare/v7.0.0...v7.0.1"
+    ],
+    "editorial": "7.0.1 公告完整图明确相对 6.3.4，主体属于 7.0 开发周期；v7.0.0...v7.0.1 的 Electron 升级与快捷方式补丁留在补丁版。beta.6 增量图的测试期回归修复不重复列入。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f74nnxgbzcj312m1y5h4f.jpg"
+    ]
+  },
+  "v7.2.0": {
+    "source": "https://m.weibo.cn/detail/4042909189448775",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztjw1f9vem0oimlj30wm1lsqa6.jpg",
+      "https://ww4.sinaimg.cn/large/006fy9Ztjw1f9vem7q4yaj30rq0qawiv.jpg"
+    ],
+    "additionalSources": [
+      "https://github.com/poooi/poi/compare/v7.2.0...v7.2.1"
+    ],
+    "editorial": "7.2.1 的完整图与相对 beta.2 增量图合并去重；v7.2.0...v7.2.1 仅修复 React FontAwesome 崩溃，保留在补丁版原记录中。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1f9vem0oimlj30wm1lsqa6.jpg",
+      "weibo/images/006fy9Ztjw1f9vem7q4yaj30rq0qawiv.jpg"
+    ]
+  },
+  "v7.3.0": {
+    "source": "https://m.weibo.cn/detail/4058901639096196",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztjw1fbafhql8bqj30s82kvwpe.jpg"
+    ],
+    "additionalSources": [],
+    "editorial": "完整配图已经包含 beta.1 至正式版的三项增量，去除底部重复增量小节。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztjw1fbafhql8bqj30s82kvwpe.jpg"
+    ]
+  },
+  "v5.0.0": {
+    "source": "https://m.weibo.cn/detail/3929432446695824",
+    "images": [
+      "https://ww1.sinaimg.cn/large/006fy9Ztgw1ezte0jkttvj30p3403x6p.jpg",
+      "https://ww2.sinaimg.cn/large/006fy9Ztgw1ezte175jggj30p618ikez.jpg"
+    ],
+    "additionalSources": [],
+    "editorial": "正式版完整长图覆盖 beta.0 至 beta.2，取代只列最终增量的英文回退。安装问答作为核对资料，不将其旧版操作建议扩写为更新功能。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1ezte0jkttvj30p3403x6p.jpg",
+      "weibo/images/006fy9Ztgw1ezte175jggj30p618ikez.jpg"
+    ]
+  },
+  "v7.4.0": {
+    "source": "https://m.weibo.cn/detail/4081524570241818",
+    "images": [
+      "https://wx1.sinaimg.cn/large/006fy9Ztly1fdalopxu67j30re2undvv.jpg"
+    ],
+    "additionalSources": [
+      "https://github.com/poooi/poi/compare/v7.4.0...v7.4.1"
+    ],
+    "editorial": "完整配图包含 beta.0 至正式版变化，重复小节已合并；仅在 v7.4.1 修复的 macOS Flash 显示异常未归入本版。原图“战斗详情”为空标题，不编造内容。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztly1fdalopxu67j30re2undvv.jpg"
+    ]
+  },
+  "v7.5.0": {
+    "source": "https://m.weibo.cn/detail/4091988116273348",
+    "images": [
+      "https://wx3.sinaimg.cn/large/006fy9Ztly1fe7zg5628kj30rq16u790.jpg"
+    ],
+    "additionalSources": [
+      "https://github.com/poooi/poi/releases/tag/v7.5.0",
+      "https://github.com/poooi/poi/compare/v7.5.0-beta.0...v7.5.0",
+      "https://github.com/poooi/poi/commit/c82b9436a901b1040ced9702866233eb28738a43"
+    ],
+    "editorial": "以 beta.0 微博完整公告为主体，补充正式版提交 c82b9436 的地图资源统计，并核对 beta.0...v7.5.0。此条含依据代码补写的内容，标为 reconstructed，区别于纯粹恢复的公告。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztly1fe7zg5628kj30rq16u790.jpg"
+    ],
+    "reconstructed": true
+  },
+  "v7.6.0": {
+    "source": "https://m.weibo.cn/detail/4102569666369871",
+    "images": [
+      "https://wx3.sinaimg.cn/large/006fy9Ztly1ff5qp823mhj30rg10htcy.jpg"
+    ],
+    "additionalSources": [],
+    "editorial": "正式版完整公告。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztly1ff5qp823mhj30rg10htcy.jpg"
+    ]
+  },
+  "v6.2.0": {
+    "source": "https://m.weibo.cn/detail/3975356639554424",
+    "images": [
+      "https://ww1.sinaimg.cn/large/006fy9Ztgw1f3vwi2xi0dj312i1bw7dk.jpg",
+      "https://ww2.sinaimg.cn/large/006fy9Ztgw1f3vwi5k14wj312i0xlwix.jpg",
+      "https://ww1.sinaimg.cn/large/006fy9Ztjw1f2p7dt6rgtj312i0vmjwx.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/3961973471401643",
+      "https://github.com/poooi/poi/releases/tag/v6.2.0"
+    ],
+    "editorial": "完整图明确相对 6.1.3，覆盖 beta.0、beta.1；与正式版 beta.1 增量图去重，补充帖中的取消网络提示设置经正式版 GitHub 日志交叉确认。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f3vwi2xi0dj312i1bw7dk.jpg",
+      "weibo/images/006fy9Ztgw1f3vwi5k14wj312i0xlwix.jpg",
+      "weibo/images/006fy9Ztjw1f2p7dt6rgtj312i0vmjwx.jpg"
+    ]
+  },
+  "v6.3.0": {
+    "source": "https://m.weibo.cn/detail/3986250061337998",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztgw1f4unkpv94bj30w80le77e.jpg"
+    ],
+    "additionalSources": [],
+    "editorial": "同一公告分别附 6.3.0 和 6.3.1-beta 的日志，按图片标题区分，不混入下一补丁的变化。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f4unkpv94bj30w80le77e.jpg"
+    ]
+  },
+  "v6.3.1": {
+    "source": "https://m.weibo.cn/detail/3986250061337998",
+    "images": [
+      "https://ww1.sinaimg.cn/large/006fy9Ztgw1f4unkt5sxuj312g122q8j.jpg",
+      "https://ww4.sinaimg.cn/large/006fy9Ztgw1f5e2b9zlpwj312e13mdnm.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/3988352518724457",
+      "https://m.weibo.cn/detail/3992334616225379",
+      "https://github.com/poooi/poi/compare/v6.3.0...v6.3.1"
+    ],
+    "editorial": "合并 beta.0、beta.1、beta.2 和 6.3.3 累积公告中经 v6.3.0...v6.3.1 核对已落地的内容；6.3.2 的白屏修复和 6.3.3 的新 API 修复未前移。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f4unkt5sxuj312g122q8j.jpg",
+      "weibo/images/006fy9Ztgw1f5e2b9zlpwj312e13mdnm.jpg"
+    ]
+  },
+  "v7.1.0": {
+    "source": "https://m.weibo.cn/detail/4024303370238335",
+    "images": [
+      "https://ww3.sinaimg.cn/large/006fy9Ztgw1f881vdqdphj312s1fxgum.jpg",
+      "https://ww1.sinaimg.cn/large/006fy9Ztgw1f881vkxlvej312s0fkgno.jpg"
+    ],
+    "additionalSources": [
+      "https://m.weibo.cn/detail/4023236070942575",
+      "https://github.com/poooi/poi/compare/v7.1.0-beta.1...v7.1.0"
+    ],
+    "editorial": "完整图明确相对 7.0.2；合并相对 beta.1 的两项修复，资源变动量在完整图已存在，不重复。",
+    "imageFiles": [
+      "weibo/images/006fy9Ztgw1f881vdqdphj312s1fxgum.jpg",
+      "weibo/images/006fy9Ztgw1f881vkxlvej312s0fkgno.jpg"
+    ]
+  }
+}
