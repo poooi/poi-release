@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process'
 import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
+import OpenCC from 'opencc-js'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const poi = path.resolve(root, process.argv[2] ?? '../poi')
@@ -159,7 +160,7 @@ function splitPluginNotes(markdown) {
     if (heading) {
       if (pluginDepth && heading[1].length <= pluginDepth) pluginDepth = 0
       if (
-        /^(插件更新|Plugins|Plugin updates(?:.*)?|New plugin:.*)$/i.test(
+        /^(插件更新|外掛更新|プラグイン更新|Plugins|Plugin updates(?:.*)?|New plugin:.*)$/i.test(
           heading[2],
         )
       )
@@ -221,6 +222,60 @@ const history = versions.map((version) => {
   }
   return { version, publishedAt: release?.publishedAt ?? null, notes }
 })
+// Human-maintained translations override the selected source only where listed.
+// Keep the source URL and reconstruction status: translation is not reconstruction.
+const localized = JSON.parse(
+  await readFile(
+    new URL('../history/localized/sources.json', import.meta.url),
+    'utf8',
+  ),
+)
+for (const [version, { from, languages: targets }] of Object.entries(
+  localized,
+)) {
+  const entry = history.find((release) => release.version === version)
+  const source = entry?.notes[from]
+  if (!source) throw new Error(`Missing localization source ${version}/${from}`)
+  for (const language of targets) {
+    if (!languages.includes(language) || language === from || language === 'zh-TW')
+      throw new Error(`Invalid localization target ${version}/${language}`)
+    const markdown = (
+      await readFile(
+        new URL(
+          `../history/localized/${version}/${language}.md`,
+          import.meta.url,
+        ),
+        'utf8',
+      )
+    ).trim()
+    if (!markdown) throw new Error(`Empty localization ${version}/${language}`)
+    entry.notes[language] = {
+      ...splitPluginNotes(markdown),
+      source: source.source,
+      reconstructed: source.reconstructed,
+      translatedFrom: from,
+    }
+  }
+}
+// Traditional Chinese is derived from Simplified Chinese, never rewritten.
+const toTraditional = OpenCC.Converter({ from: 'cn', to: 'twp' })
+for (const entry of history) {
+  const simplified = entry.notes['zh-CN']
+  if (!simplified) throw new Error(`Missing Simplified Chinese ${entry.version}`)
+  entry.notes['zh-TW'] = {
+    markdown: toTraditional(simplified.markdown),
+    ...(simplified.pluginMarkdown
+      ? { pluginMarkdown: toTraditional(simplified.pluginMarkdown) }
+      : {}),
+    source: simplified.source,
+    reconstructed: simplified.reconstructed,
+    translatedFrom: 'zh-CN',
+  }
+  for (const language of languages) {
+    if (!entry.notes[language]?.markdown)
+      throw new Error(`Missing translation ${entry.version}/${language}`)
+  }
+}
 await writeFile(
   new URL('../history/stable.json', import.meta.url),
   JSON.stringify(history, null, 2) + '\n',

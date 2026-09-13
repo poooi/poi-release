@@ -131,7 +131,8 @@ here. A local checkout is usually at `../poi`.
 - The major-version reset rule applies only to the root channel Markdown files. Never reset history/stable.json.
 - Archive only normal stable tags; exclude beta, alpha and special compatibility builds.
 - Rebuild the archive with node scripts/rebuild-history.mjs ../poi after committing stable notes. See history/README.md for sources and missing-note reconstruction rules.
-- Preserve available original translations. For older releases with no translation, leave that language absent so the website can show the English original; do not label English text as translated.
+- Preserve available original translations in their source history. Maintain newly supplied English, Japanese and Simplified Chinese translations as `history/localized/<version>/<language>.md`, with source language and target languages in `history/localized/sources.json`. Rebuild `history/stable.json`; do not edit the generated prose directly. Keep all four languages complete and inherit the source note's reconstruction status. A translation is not a reconstruction; generated `translatedFrom` records its origin.
+- Generate every archived Traditional Chinese note from the final Simplified Chinese note using OpenCC's Taiwan phrase conversion (`opencc-js` cn to twp, corresponding to s2twp). Do not independently translate/rephrase Traditional Chinese or add zh-TW Markdown targets. Correct the Simplified Chinese source and rebuild so both Chinese variants keep the same content and structure.
 - Explicitly reconstructed entries belong in history/reconstructed.json, with reviewed code evidence and all four language summaries. Keep their reconstructed flag when generating the archive.
 - Archive-only restoration does not represent a new release and must not change latest.json or the root channel files.
 
