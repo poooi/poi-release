@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
 import OpenCC from "opencc-js";
+import { splitPluginNotes } from "./split-plugin-notes.mjs";
 
 const archive = JSON.parse(
   await readFile(new URL("../history/stable.json", import.meta.url), "utf8"),
@@ -93,5 +94,22 @@ test("plugin archive coverage stays consistent across languages", () => {
   for (const entry of archive) {
     const coverage = Object.values(entry.notes).map(note => Boolean(note.pluginMarkdown));
     assert.equal(new Set(coverage).size, 1, entry.version);
+  }
+});
+
+test("current stable channel notes are included in the website archive", async () => {
+  const latest = JSON.parse(await readFile(new URL('../latest.json', import.meta.url), 'utf8'));
+  for (const language of ['en-US', 'ja-JP', 'zh-CN']) {
+    const markdown = (await readFile(new URL('../' + language + '.md', import.meta.url), 'utf8')).replaceAll('\r\n', '\n');
+    const headings = [...markdown.matchAll(/^## POI (v\d+\.\d+\.\d+) [^\n]+$/gim)];
+    assert.equal(headings[0]?.[1], latest.version, language + ' must start with the latest stable version');
+    for (const [index, heading] of headings.entries()) {
+      const note = archive.find(entry => entry.version === heading[1])?.notes[language];
+      assert.ok(note, 'Rebuild the archive: missing ' + heading[1] + '/' + language);
+      const body = markdown.slice(heading.index + heading[0].length, headings[index + 1]?.index).trim();
+      const expected = splitPluginNotes(body);
+      assert.equal(note.markdown, expected.markdown, 'Rebuild the archive: stale ' + heading[1] + '/' + language);
+      assert.equal(note.pluginMarkdown, expected.pluginMarkdown, 'Rebuild the archive: stale plugins for ' + heading[1] + '/' + language);
+    }
   }
 });

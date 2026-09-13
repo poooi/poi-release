@@ -3,6 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 import OpenCC from 'opencc-js'
+import { splitPluginNotes } from './split-plugin-notes.mjs'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const poi = path.resolve(root, process.argv[2] ?? '../poi')
@@ -162,42 +163,6 @@ versions.sort((a, b) => {
   const right = b.slice(1).split('.').map(Number)
   return right[0] - left[0] || right[1] - left[1] || right[2] - left[2]
 })
-// Keep recovered plugin history in the archive, outside the website's main notes.
-function splitPluginNotes(markdown) {
-  const main = []
-  const plugins = []
-  let pluginDepth = 0
-  let pluginBullet = false
-  for (const line of markdown.split('\n')) {
-    const boldHeading = /^\*\*(.+)\*\*$/.exec(line)
-    const heading =
-      /^(#{1,6})\s+(.+)$/.exec(line) ??
-      (boldHeading ? [line, '##', boldHeading[1]] : null)
-    if (heading) {
-      if (pluginDepth && heading[1].length <= pluginDepth) pluginDepth = 0
-      if (
-        /^(插件更新|外掛更新|プラグイン更新|Plugins|Plugin updates(?:.*)?|New plugin:.*)$/i.test(
-          heading[2],
-        )
-      )
-        pluginDepth = heading[1].length
-      pluginBullet = false
-    }
-    if (/^- /.test(line))
-      pluginBullet =
-        /^- (?:Add new plugin(?:[(:]|\s)|New plugin:|(?:新插件|新外掛)(?:[:：]|\s)|新プラグイン(?:\s|[「:：])|.*KCwiki Quotes Translator|.*kcwiki 語音字幕)/i.test(
-          line,
-        ) ||
-        /^- \[(?:Prophet|Battle detail|Expedition|Quests?|Hensei Nikki|Report|Ship info|Fleet info|Akashic records)\]/i.test(
-          line,
-        )
-    ;(pluginDepth || pluginBullet ? plugins : main).push(line)
-  }
-  const result = { markdown: main.join('\n').trim() }
-  if (plugins.some((line) => line.trim()))
-    result.pluginMarkdown = plugins.join('\n').trim()
-  return result
-}
 const history = versions.map((version) => {
   const release = releases.get(version)
   const notes = notesByVersion.get(version) ?? {}
