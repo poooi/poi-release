@@ -125,3 +125,16 @@ here. A local checkout is usually at `../poi`.
 
 - Release commits use the message `release: vX.Y.Z` (exactly the tag being released).
 - Do not commit or push unless asked.
+
+## Historical archive
+
+- The major-version reset rule applies only to the root channel Markdown files. Never reset history/stable.json.
+- Archive only normal stable tags; exclude beta, alpha and special compatibility builds.
+- Rebuild the archive with node scripts/rebuild-history.mjs ../poi after committing stable notes. See history/README.md for sources and missing-note reconstruction rules.
+- Preserve available original translations in their source history. Maintain newly supplied English, Japanese and Simplified Chinese translations as `history/localized/<version>/<language>.md`, with source language and target languages in `history/localized/sources.json`. Rebuild `history/stable.json`; do not edit the generated prose directly. Keep all four languages complete and inherit the source note's reconstruction status. A translation is not a reconstruction; generated `translatedFrom` records its origin.
+- Generate every archived Traditional Chinese note from the final Simplified Chinese note using OpenCC's Taiwan phrase conversion (`opencc-js` cn to twp, corresponding to s2twp). Do not independently translate/rephrase Traditional Chinese or add zh-TW Markdown targets. Correct the Simplified Chinese source and rebuild so both Chinese variants keep the same content and structure.
+- Explicitly reconstructed entries belong in history/reconstructed.json, with reviewed code evidence and all four language summaries. Keep their reconstructed flag when generating the archive.
+- Archive-only restoration does not represent a new release and must not change latest.json or the root channel files.
+
+- Historical beta announcements may be source material for cumulative stable notes. Keep only stable entries in history/stable.json; store official Weibo text, image evidence and editorial decisions under history/weibo/ and history/weibo.json.
+- Preserve historical plugin details in pluginMarkdown for archival use; markdown is reserved for main application notes consumed by the website. Plugin management and compatibility features in poi itself remain main application changes.

@@ -1,0 +1,31 @@
+{
+  "v10.2.1": {
+    "source": "https://github.com/poooi/poi/compare/v10.2.1...v10.2.2",
+    "evidence": [
+      "64efda0dba8d34c6bb74c5b4d92519bf2c5c0a3f",
+      "e9f899b6e91905e636487b5f1e185ec37eb34e13",
+      "c6d3896070d622b9ad29e7d3ced9299e6183dff0"
+    ],
+    "notes": {
+      "en-US": "The update contents are the same as v10.2.2",
+      "ja-JP": "更新内容は v10.2.2 と同じです",
+      "zh-CN": "更新内容与 v10.2.2 相同",
+      "zh-TW": "更新內容與 v10.2.2 相同"
+    },
+    "publishedAt": "2019-02-10T18:07:39Z"
+  },
+  "v6.0.0": {
+    "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
+    "evidence": [
+      "f2da64d4f06424f409eb9dcae4a1578143a7c8ed",
+      "b281b517fa89840b548dc637dff8b4479a58771b",
+      "ad2673e402e3cea99d27e08d5d17f435dc0ee8fc"
+    ],
+    "notes": {
+      "en-US": "### Features\n\n- Click the notification bar to review recent messages\n- Add the KCwiki Quotes Translator plugin to the plugin list, providing Chinese subtitles for ship voices\n- Detect plugins that require a newer poi version and offer a compatible version instead",
+      "ja-JP": "### 新機能\n\n- 通知バーをクリックして最近の通知を確認できるように変更\n- 艦娘のセリフに中国語字幕を付けるKCwiki Quotes Translatorをプラグイン一覧に追加\n- より新しいpoiを必要とするプラグインを検出し、互換性のあるバージョンを案内",
+      "zh-CN": "### 功能\n\n- 点击通知栏可查看最近的通知记录\n- 在插件列表中添加 kcwiki 语音字幕插件，为舰娘语音提供中文字幕\n- 识别需要更新版本 poi 的插件，并提供兼容版本",
+      "zh-TW": "### 功能\n\n- 點選通知列即可查看最近的通知紀錄\n- 在外掛列表中新增 kcwiki 語音字幕外掛，為艦娘語音提供中文字幕\n- 識別需要較新版本 poi 的外掛，並提供相容版本"
+    }
+  }
+}

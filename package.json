@@ -1,0 +1,11 @@
+{
+  "name": "poi-release",
+  "private": true,
+  "scripts": {
+    "build:history": "node scripts/rebuild-history.mjs",
+    "test": "node --test scripts/history.test.mjs"
+  },
+  "devDependencies": {
+    "opencc-js": "1.4.2"
+  }
+}

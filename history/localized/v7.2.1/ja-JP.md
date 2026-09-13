@@ -1,0 +1,1 @@
+React FontAwesome によるクラッシュを修正

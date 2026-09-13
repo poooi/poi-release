@@ -1,0 +1,490 @@
+{
+  "v10.9.2": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.9.1": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.9.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.8.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.7.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.6.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.5.1": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.5.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.4.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.3.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.2.4": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.2.3": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.2.2": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.1.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v10.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v9.0.4": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v9.0.3": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v9.0.2": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v9.0.1": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v9.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v8.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v8.1.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v8.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.10.1": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.10.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.9.1": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.9.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.8.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.7.0": {
+    "from": "zh-CN",
+    "languages": [
+      "ja-JP"
+    ]
+  },
+  "v7.6.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.5.2": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.5.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.5.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.4.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.4.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.3.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.2.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.1.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v7.0.2": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.0.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v7.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.3.3": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v6.3.2": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v6.3.1": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.3.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.1.3": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.1.2": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.1.1": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v6.0.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v6.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v5.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v5.1.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v5.0.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v4.2.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v4.1.0": {
+    "from": "zh-CN",
+    "languages": [
+      "en-US",
+      "ja-JP"
+    ]
+  },
+  "v4.0.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.6.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.6.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.5.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.4.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.3.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.3.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.1.2": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.1.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.1.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v3.0.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v2.1.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v2.0.1": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v2.0.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v1.1.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  },
+  "v1.0.0": {
+    "from": "en-US",
+    "languages": [
+      "ja-JP",
+      "zh-CN"
+    ]
+  }
+}
