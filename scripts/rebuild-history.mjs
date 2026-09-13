@@ -220,7 +220,7 @@ const history = versions.map((version) => {
   for (const note of Object.values(notes)) {
     Object.assign(note, splitPluginNotes(note.markdown))
   }
-  return { version, publishedAt: release?.publishedAt ?? null, notes }
+  return { version, publishedAt: release?.publishedAt ?? reconstructed[version]?.publishedAt ?? null, notes }
 })
 // Human-maintained translations override the selected source only where listed.
 // Keep the source URL and reconstruction status: translation is not reconstruction.

@@ -3,14 +3,16 @@
     "source": "https://github.com/poooi/poi/compare/v10.2.1...v10.2.2",
     "evidence": [
       "64efda0dba8d34c6bb74c5b4d92519bf2c5c0a3f",
-      "e9f899b6e91905e636487b5f1e185ec37eb34e13"
+      "e9f899b6e91905e636487b5f1e185ec37eb34e13",
+      "c6d3896070d622b9ad29e7d3ced9299e6183dff0"
     ],
     "notes": {
       "en-US": "The update contents are the same as v10.2.2",
       "ja-JP": "更新内容は v10.2.2 と同じです",
       "zh-CN": "更新内容与 v10.2.2 相同",
       "zh-TW": "更新內容與 v10.2.2 相同"
-    }
+    },
+    "publishedAt": "2019-02-10T18:07:39Z"
   },
   "v6.0.0": {
     "source": "https://github.com/poooi/poi/compare/v5.2.0...v6.0.0",
