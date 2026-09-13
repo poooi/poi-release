@@ -185,7 +185,7 @@ function splitPluginNotes(markdown) {
     }
     if (/^- /.test(line))
       pluginBullet =
-        /^- (?:Add new plugin[(:]|New plugin:|.*KCwiki Quotes Translator|.*kcwiki 語音字幕)/i.test(
+        /^- (?:Add new plugin(?:[(:]|\s)|New plugin:|(?:新插件|新外掛)(?:[:：]|\s)|新プラグイン(?:\s|[「:：])|.*KCwiki Quotes Translator|.*kcwiki 語音字幕)/i.test(
           line,
         ) ||
         /^- \[(?:Prophet|Battle detail|Expedition|Quests?|Hensei Nikki|Report|Ship info|Fleet info|Akashic records)\]/i.test(

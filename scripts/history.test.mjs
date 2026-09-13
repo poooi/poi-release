@@ -58,3 +58,40 @@ test("the rebuilt archive retains four languages and exact OpenCC output", () =>
     );
   }
 });
+
+
+test("new plugin announcements are archived separately in every language", () => {
+  const cases = [
+    ["v10.7.0", {
+      "en-US": /poi-plugin-quest-info-2/,
+      "zh-CN": /任务信息2/,
+      "zh-TW": /任務資訊2/,
+      "ja-JP": /任务信息2/,
+    }],
+    ["v10.2.0", {
+      "en-US": /New Ship Reminder/,
+      "zh-CN": /新舰力保/,
+      "zh-TW": /新艦力保/,
+      "ja-JP": /新舰力保/,
+    }],
+  ];
+  for (const [version, patterns] of cases) {
+    for (const [language, pattern] of Object.entries(patterns)) {
+      const note = notes(version)[language];
+      assert.doesNotMatch(note.markdown, pattern, version + "/" + language);
+      assert.match(note.pluginMarkdown, pattern, version + "/" + language);
+    }
+  }
+  for (const note of Object.values(notes("v10.7.0"))) {
+    assert.match(note.markdown, /Electron@15/i);
+  }
+  assert.match(notes("v7.4.0")["zh-CN"].markdown, /插件自动更新/);
+  assert.match(notes("v6.0.0")["en-US"].markdown, /Settings/);
+});
+
+test("plugin archive coverage stays consistent across languages", () => {
+  for (const entry of archive) {
+    const coverage = Object.values(entry.notes).map(note => Boolean(note.pluginMarkdown));
+    assert.equal(new Set(coverage).size, 1, entry.version);
+  }
+});
